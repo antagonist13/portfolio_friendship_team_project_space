@@ -31,7 +31,7 @@ let swiperAboutMe = new Swiper('.mySwiper', {
     },
     // when window width is >= 1440px
     1440: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
   },
 });
