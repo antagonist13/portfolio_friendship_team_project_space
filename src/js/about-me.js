@@ -13,7 +13,7 @@ new Accordion('.accordion-container', {
 
 const nextBtn = document.querySelector('.about-me-swiper-next');
 
-let swiper = new Swiper('.mySwiper', {
+let swiperAboutMe = new Swiper('.mySwiper', {
   modules: [Keyboard, Mousewheel],
   keyboard: {
     enabled: true,
@@ -36,6 +36,6 @@ let swiper = new Swiper('.mySwiper', {
   },
 });
 
-nextBtn.addEventListener('click', () => swiper.slideNext());
+nextBtn.addEventListener('click', () => swiperAboutMe.slideNext());
 
-window.addEventListener('resize', () => swiper.update());
+window.addEventListener('resize', () => swiperAboutMe.update());
