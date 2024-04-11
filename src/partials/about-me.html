@@ -1,5 +1,48 @@
 <section class="about-me">
   <div class="container">
+    <h2 class="about-me-title visually-hidden">About me</h2>
+    <div class="about-me-wrapper">
+      <p class="about-me-wrapper-text">
+        I work with people all over the world to create impressive and
+        <span class="about-me-wrapper-text-red">functional</span>
+        <span class="about-me-wrapper-text-grey">websites</span> that reflect
+        each client's unique personality.
+      </p>
+      <picture>
+        <source
+          class="about-me-wrapper-foto"
+          srcset="
+            /img/about-me/desktop-jefferson-img.jpg    1x,
+            /img/about-me/desktop-jefferson-img@2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          class="about-me-wrapper-foto"
+          srcset="
+            /img/about-me/tablet-jefferson-img.jpg    1x,
+            /img/about-me/tablet-jefferson-img@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          class="about-me-wrapper-foto"
+          srcset="
+            /img/about-me/mobile-jefferson-img.jpg    1x,
+            /img/about-me/mobile-jefferson-img@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="about-me-wrapper-foto"
+          src="/img/about-me/mobile-jefferson-img.jpg"
+          alt="portfolio picture"
+        />
+      </picture>
+    </div>
+
+    <!---------------------- ACCARDION ---------------------------->
+
     <div class="accordion-container">
       <div class="ac">
         <h2 class="ac-header">
@@ -48,7 +91,7 @@
           <button type="button" class="ac-trigger">Education</button>
         </h2>
         <div class="ac-panel">
-          <ul class="ac-text">
+          <ul class="ac-text list">
             <li>
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
@@ -62,17 +105,45 @@
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <svg class="our-team-icon" width="18" height="18" >
-      <use href="/img/sprite.svg#icon-small-arrow-down"></use>
-    </svg>
-    <svg class="our-team-icon" width="18" height="18">
-      <use href="/img/sprite.svg#icon-small-arrow-up"></use>
-    </svg></use>
-    </svg>
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />
-</svg>
+    <!------------------------ SWIPER ----------------------------->
+    <div class="about-me-sweper-box">
+      <div class="swiper mySwiper about-me-swiper">
+        <div class="swiper-wrapper about-me-swiper-wrapper">
+          <div class="swiper-slide about-me-swiper-slide">Slide 1</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 2</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 3</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 4</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 5</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 6</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 7</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 8</div>
+          <div class="swiper-slide about-me-swiper-slide">Slide 9</div>
+        </div>
+      </div>
+      <div class="swiper-next about-me-swiper-next">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.6665 20H33.3332"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M23.3335 10L33.3335 20L23.3335 30"
+            stroke="#3B3B3B"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
