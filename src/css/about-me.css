@@ -37,8 +37,8 @@
 
 .accordion-container .ac .ac-trigger::after {
   box-sizing: border-box;
-  spo: #fafafa;
-  content: url('/src/img/sprite.svg#icon-big-arrow-left');
+
+  content: url('./img/icon1.svg');
   width: 36px;
   height: 36px;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -47,5 +47,8 @@
 }
 
 .accordion-container .ac.is-active > .ac-header .ac-trigger::after {
-  content: url('/icon1.svg');
+  stroke: #fafafa;
+  color: white;
+
+  /* content: url('/img/sprite.svg/#icon-small-arrow-up'); */
 }
