@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/portfolio_team_project_space/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio_team_project_space/assets/vendor-b81a80b6.js">
     <link rel="stylesheet" href="/portfolio_team_project_space/assets/vendor-2715ca0a.css">
-    <link rel="stylesheet" href="/portfolio_team_project_space/assets/index-e8a21370.css">
+    <link rel="stylesheet" href="/portfolio_team_project_space/assets/index-2e04c25f.css">
   </head>
   <body>
     <header></header>
@@ -28,10 +28,12 @@
     <section>
 </section>
     <section></section>
-    <section><section class="project-section swiper">
+    <section class="project-section">
     <h2 class="project-head">Projects</h2>
-    <ul class="project-list">
-        <li class="project-list-style">
+    <div class="swiper-on">
+        <!-- swiper-on js -->
+    <ul class="project-list swiper-wrapper">
+        <li class="project-list-style swiper-slide">
             <div class="project-div-design">
                 <ul class="project-list-info">
                     <li class="project-list-design">#react</li>
@@ -42,7 +44,8 @@
             <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
             <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space" target="_blank">See project</a></button>
             </div>
-            <picture>
+            <div  class="project-img">
+            <picture class="project-img-design">
                 <source srcset="/portfolio_team_project_space/assets/desktop-first-project-7af873e7.jpg 1x, /portfolio_team_project_space/assets/desktop-first-project@2x-a2f3ce35.jpg 2x"
             media="(min-width: 1440px)">
                 <source srcset="/portfolio_team_project_space/assets/desktop-first-project-7af873e7.jpg 1x, /portfolio_team_project_space/assets/desktop-first-project@2x-a2f3ce35.jpg 2x"
@@ -53,15 +56,21 @@
                          alt="Mobile App" 
                          class="project-list-img">
             </picture>
+            </div>
 </li>
         <li class="project-list-style display">
-                        <span>#react</span>
-                        <span>#js</span>
-                        <span>#node js</span>
-                        <span>#git</span>
-                        <h3 class="">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                        <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
-                                target="_blank">See project</a></button>
+            <div class="project-div-design">
+                <ul class="project-list-info">
+                    <li class="project-list-design">#react</li>
+                    <li class="project-list-design">#js</li>
+                    <li class="project-list-design">#node js</li>
+                    <li class="project-list-design">#git</li>
+                </ul>
+                <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
+                <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
+                        target="_blank">See project</a></button>
+            </div>
+                        <div class="project-img">
                         <picture>
                             <source srcset="/portfolio_team_project_space/assets/tablet-second-project-d8e8aa18.jpg 1x, /portfolio_team_project_space/assets/tablet-second-project@2x-44f43660.jpg 2x" 
                                     media="(min-width: 1440px)">
@@ -73,14 +82,21 @@
                             alt="Dog" 
                             class="project-list-img">
                         </picture>
+                        </div>
+                        </li>
         <li class="project-list-style display">
-                        <span>#react</span>
-                        <span>#js</span>
-                        <span>#node js</span>
-                        <span>#git</span>
-                        <h3>Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                        <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
-                                target="_blank">See project</a></button>
+            <div class="project-div-design">
+                <ul class="project-list-info">
+                    <li class="project-list-design">#react</li>
+                    <li class="project-list-design">#js</li>
+                    <li class="project-list-design">#node js</li>
+                    <li class="project-list-design">#git</li>
+                </ul>
+                <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
+                <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
+                        target="_blank">See project</a></button>
+            </div>
+            <div class="project-img">
             <picture>
                 <source srcset="/portfolio_team_project_space/assets/tablet-third-project-3e5c1d64.jpg 1x, /portfolio_team_project_space/assets/tablet-third-project@2x-ff44d4d8.jpg 2x" 
                                                 media="(min-width: 1440px)">
@@ -92,20 +108,23 @@
                 alt="Form Registr" 
                 class="project-list-img">
             </picture>
+            </div>
+            </li>
     </ul>
-    <div>
-    <button class="project-btn-swap">
+    <div class="project-btn-swap-design">
+    <button class="project-btn-swap-left swiper-button-prev-rev project-btn-swap-disable" type="button">
         <svg class="project-btn-swap-list" width="24" height="24" aria-label="swap img project left">
             <use href="../img/sprite.svg#icon-big-arrow-left"></use>
         </svg>
     </button>
-    <button class="project-btn-swap">
+    <button class="project-btn-swap-right swiper-button-next-right" type="button">
         <svg class="project-btn-swap-list" width="24" height="24" aria-label="swap img project right">
             <use href="../img/sprite.svg#icon-big-arrow-right"></use>
         </svg>
     </button>
 </div>
-</section></section>
+</div>
+</section>
     <section><section class="faq-section">
     <div class="container">
     <h2 class="faq-main-title">FAQ</h2>
