@@ -27,7 +27,7 @@
 }
 
 .reviews__item {
-  min-height: 302px;
+  height: auto !important;
   padding: 32px 24px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
