@@ -1,7 +1,9 @@
-<section class="project-section swiper">
+<section class="project-section">
     <h2 class="project-head">Projects</h2>
-    <ul class="project-list">
-        <li class="project-list-style">
+    <div class="swiper-on">
+        <!-- swiper-on js -->
+    <ul class="project-list swiper-wrapper">
+        <li class="project-list-style swiper-slide">
             <div class="project-div-design">
                 <ul class="project-list-info">
                     <li class="project-list-design">#react</li>
@@ -12,7 +14,8 @@
             <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
             <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space" target="_blank">See project</a></button>
             </div>
-            <picture>
+            <div  class="project-img">
+            <picture class="project-img-design">
                 <source srcset="./img/projects/desktop-first-project.jpg 1x,
             ./img/projects/desktop-first-project@2x.jpg 2x"
             media="(min-width: 1440px)">
@@ -26,15 +29,21 @@
                          alt="Mobile App" 
                          class="project-list-img">
             </picture>
+            </div>
 </li>
         <li class="project-list-style display">
-                        <span>#react</span>
-                        <span>#js</span>
-                        <span>#node js</span>
-                        <span>#git</span>
-                        <h3 class="">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                        <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
-                                target="_blank">See project</a></button>
+            <div class="project-div-design">
+                <ul class="project-list-info">
+                    <li class="project-list-design">#react</li>
+                    <li class="project-list-design">#js</li>
+                    <li class="project-list-design">#node js</li>
+                    <li class="project-list-design">#git</li>
+                </ul>
+                <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
+                <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
+                        target="_blank">See project</a></button>
+            </div>
+                        <div class="project-img">
                         <picture>
                             <source srcset="./img/projects/desktop-second-project.jpg 1x,
                                     ./img/projects/desktop-second-project@2x.jpg 2x" 
@@ -49,14 +58,21 @@
                             alt="Dog" 
                             class="project-list-img">
                         </picture>
+                        </div>
+                        </li>
         <li class="project-list-style display">
-                        <span>#react</span>
-                        <span>#js</span>
-                        <span>#node js</span>
-                        <span>#git</span>
-                        <h3>Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                        <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
-                                target="_blank">See project</a></button>
+            <div class="project-div-design">
+                <ul class="project-list-info">
+                    <li class="project-list-design">#react</li>
+                    <li class="project-list-design">#js</li>
+                    <li class="project-list-design">#node js</li>
+                    <li class="project-list-design">#git</li>
+                </ul>
+                <h3 class="project-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
+                <button class="project-btn"><a href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
+                        target="_blank">See project</a></button>
+            </div>
+            <div class="project-img">
             <picture>
                 <source srcset="./img/projects/desktop-third-project.jpg 1x,
                                                 ./img/projects/desktop-third-project@2x.jpg 2x" 
@@ -71,17 +87,20 @@
                 alt="Form Registr" 
                 class="project-list-img">
             </picture>
+            </div>
+            </li>
     </ul>
-    <div>
-    <button class="project-btn-swap">
+    <div class="project-btn-swap-design">
+    <button class="project-btn-swap-left swiper-button-prev-rev project-btn-swap-disable" type="button">
         <svg class="project-btn-swap-list" width="24" height="24" aria-label="swap img project left">
             <use href="../img/sprite.svg#icon-big-arrow-left"></use>
         </svg>
     </button>
-    <button class="project-btn-swap">
+    <button class="project-btn-swap-right swiper-button-next-right" type="button">
         <svg class="project-btn-swap-list" width="24" height="24" aria-label="swap img project right">
             <use href="../img/sprite.svg#icon-big-arrow-right"></use>
         </svg>
     </button>
+</div>
 </div>
 </section>

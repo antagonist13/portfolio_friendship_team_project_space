@@ -19,6 +19,14 @@
 }
 
 .project-list {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.project-list-style {
+    flex: 0 0 auto;
+    margin-right: 10px;
     max-width: 343px;
 }
 
@@ -28,6 +36,7 @@
     padding: 32px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+   
 }
 
 .project-list-info {
@@ -59,4 +68,38 @@
     color: #FAFAFA;
     border-radius: 60px;
     padding: 13px 32px;
+}
+
+.project-img {
+    padding: 100px 16px;
+    background-color: #242527;
+        border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            margin-bottom: 32px;
+}
+
+.project-btn-swap-design {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.project-btn-swap-left, 
+.project-btn-swap-right {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    stroke: #FAFAFA;
+    padding: 14px;
+}
+
+.project-btn-swap-list {
+    display: flex;
+}
+
+.project-btn-swap-disable {
+    border-color: #3b3b3b;
+        stroke: #3b3b3b;
+        cursor: auto;
 }
