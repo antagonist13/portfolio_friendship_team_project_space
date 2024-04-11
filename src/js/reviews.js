@@ -51,6 +51,16 @@ const swiper = new Swiper('.swiper', {
   },
   speed: 400,
   spaceBetween: 100,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+  },
 });
 
 btnPrev.addEventListener('click', () => {
