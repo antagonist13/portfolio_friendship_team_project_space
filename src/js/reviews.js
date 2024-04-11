@@ -31,10 +31,10 @@ btnNext.addEventListener('click', () => {
 // swiper.on('activeIndexChange', () => {
 //   btnPrev.classList.remove('disabled_btn');
 // });
-swiper.on('reachBeginning', () => {
-  btnPrev.classList.add('disabled_btn');
-  btnNext.classList.remove('disabled_btn');
-});
+  swiper.on('reachBeginning', () => {
+    btnPrev.classList.add('disabled_btn');
+    btnNext.classList.remove('disabled_btn');
+  });
 
 swiper.on('reachEnd', () => {
   btnNext.classList.add('disabled_btn');
