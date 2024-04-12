@@ -19,12 +19,94 @@
     <script type="module" crossorigin src="/portfolio_friendship_team_project_space/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio_friendship_team_project_space/assets/vendor-6e66b841.js">
     <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/vendor-23d9f17b.css">
-    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-0d048a48.css">
+    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-a28611e1.css">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+    <div class="header-container">
+        
+        <div class="header-container-avatar">
+            <a href="../index.html" class="header-avatar">
+                <img class="avatar-logo" srcset="../img/header/logo-jefferson.jpg 80w,
+                ../img/header/logo-jefferson@2x.jpg 80w"
+                src="../img/header/logo-jefferson@2x.jpg" 
+                width="80px" height="80px" alt="header avatar">
+            </a>
+            <p class="avatar-name">jefferson*</p>
+        </div>
 
-    <section></section>
+
+        <div id="profile">
+            <a class="menu-list" href="#" id="profile-link">Menu</a>
+
+            <div id="dropdown">
+                <ul class="menu-nav">
+                    <li class="menu-nav-item"><a class="sections-link" href="#about-me">About me</a></li>
+                    <li class="menu-nav-item"><a class="sections-link" href="#benefits">Benefits</a></li>
+                    <li class="menu-nav-item"><a class="sections-link" href="#project">Projects</a></li>
+                    <li class="menu-nav-item"><a class="sections-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="order-button-container">
+            <a class="header-order-button" href="#work-together">Order the project</a>
+        </div>
+        
+
+        <!-- Modal window mobile -->
+
+        <button type="button" class="burger-open-button visually-hidden" data-menu-open>
+            <svg class="burger-open-icon" width="21" height="8">
+                <use href="../img/sprite.svg#icon-menu-burger"></use>
+            </svg>
+        </button>
+
+        <div class="burger-menu-container visually-hidden" data-menu>
+
+            <button type="button" class="burger-close-button " data-menu-close>
+                <svg class="burger-close-icon" width="28" height="28">
+                    <use href="../img/sprite.svg#icon-x"></use>
+                </svg>
+            </button>
+
+            <nav class="burger-nav-menu">
+                <ul class="burger-nav-list">
+                  <li><a href="#about-me" class="burger-nav-link">About me</a></li>
+                  <li><a href="#benefits" class="burger-nav-link">Benefits</a></li>
+                  <li><a href="#project" class="burger-nav-link">Project</a></li>
+                  <li><a href="#faq" class="burger-nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="navigation-background"></div>
+        </div>
+
+
+    </div>
+</header>
+    <section class="hero">
+<div class="hero-section">
+
+    <div class="hero-title-container">
+        <h1 class="hero-title">Hello.<br> 
+            I’m Fullstack<br> developer<br> 
+            Lloyd Jefferson.</h1>
+    </div>
+
+
+    <div class="social-network-container">
+        <ul class="social-media-list">
+            <li class="social-media-list-item"><a class="contacts" href="https://www.instagram.com/goitclub/">IG</a></li>
+            <li class="social-media-list-item"><a class="contacts" href="https://www.facebook.com/goITclub/">FB</a></li>
+            <li class="social-media-list-item"><a class="contacts" href="https://www.youtube.com/c/GoIT">YT</a></li>
+            <li class="social-media-list-item"><a class="contacts" href="https://github.com/antagonist13/portfolio_friendship_team_project_space">GH</a></li>
+            <li class="social-media-list-item"><a class="contacts" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+        </ul>
+    </div>
+    
+</div>
+</section>
     <section id="about-me"><section class="about-me">
   <div class="container">
     <h2 class="about-me-title visually-hidden">About me</h2>
