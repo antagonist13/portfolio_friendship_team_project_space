@@ -1,0 +1,59 @@
+.covers {
+  display: flex;
+  align-items: center;
+
+  max-width: 375px;
+  max-height: 508px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(217, 217, 217, 0.4),
+      rgba(217, 217, 217, 0.4)
+    ),
+    url('../img/covers/Ellipse-grop.png');
+  background-size: 375px 508px;
+  background-color: rgba(47, 48, 58, 0.4);
+  overflow: hidden;
+}
+.covers__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  overflow: hidden;
+}
+
+.covers__item {
+  display: flex;
+  justify-content: center;
+  transform: rotate(17deg);
+}
+.covers__image {
+  width: 280px;
+  margin-right: 20px;
+
+  flex-shrink: 0;
+  /* width: calc(100% / 5); */
+  white-space: nowrap;
+  animation-name: marqueeLine;
+
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(50%);
+  }
+
+  to {
+    transform: translateX(-40%);
+  }
+}
