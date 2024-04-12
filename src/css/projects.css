@@ -103,3 +103,66 @@
         stroke: #3b3b3b;
         cursor: auto;
 }
+
+/* =======================tablet======================= */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.project-list-style {
+    max-width: 704px;
+}
+
+.project-div-design {
+    padding: 64px;
+}
+
+.project-list-info {
+    margin-bottom: 164px;
+}
+
+.project-title {
+    max-width: 240px;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+}
+
+.project-img-design {
+    max-width: 614px;
+}
+
+.project-img {
+    margin-bottom: 64px;
+}
+
+.project-btn-swap-design {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ======================descktop====================== */
+
+/* @media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+} */
+/* .project-list {
+    display: flex;
+} */
+/* .swiper-slide {
+    display: flex;
+} */
+
+/* .project-list-style {
+    display: flex;
+} */
+
