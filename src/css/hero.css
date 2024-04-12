@@ -1,0 +1,98 @@
+ /* .hero {   
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-color: var();
+    background-image: url();
+    backdrop-filter: blur(100px);
+    background: linear-gradient(90.57deg, rgb(28, 29, 32) 49.826%,rgb(105, 41, 45) 67.37%,rgb(237, 59, 68) 98.722%);
+    transform: rotate(180.00deg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}   */
+
+ /* .hero-section {  
+    transform: rotate(180.00deg);
+} */
+
+.hero-title-container {
+    width: 1440px;
+    padding-right: 89px; 
+    padding-left: 89px;
+    padding-top: 188px;  
+}
+
+.hero-title {
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: -3%;
+    text-align: left;
+    text-transform: uppercase;
+    width: 1084px;
+}
+
+
+.social-network-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-top: 153px;
+    padding-left: 825px;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.social-media-list-item {
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    width: 55px;
+    height: 55px;
+}
+
+.social-media-list-item:last-child {
+    width: 223px;
+    height: 55px;
+}
+
+.contacts {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 20px;
+
+
+color: rgb(250, 250, 250);
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: -2%;
+text-align: left;
+}
+
+.social-media-list-item:hover, 
+.social-media-list-item:focus,
+.social-media-list-item:active,
+.contacts:hover,
+.contacts:focus,
+.contacts:active {
+    background-color: rgb(250, 250, 250);
+    color: #000000;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    
+    box-sizing: border-box;
+    border-radius: 60px;
+}

@@ -1,18 +1,18 @@
 {
-  "name": "portfolio_team_project_space",
+  "name": "portfolio_friendship_team_project_space",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/portfolio_team_project_space/",
+    "build": "vite build --base=/portfolio_friendship_team_project_space/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
     "vite": "^4.5.2"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Yaroslav Shakun <1703shakayaroslaw@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
