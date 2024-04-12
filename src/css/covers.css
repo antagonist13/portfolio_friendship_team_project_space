@@ -20,9 +20,8 @@
 
 .covers__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+
   gap: 30px;
 
   overflow: hidden;
@@ -30,9 +29,9 @@
 
 .covers__item {
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
 
-  justify-content: center;
   transform: rotate(17deg);
 }
 
@@ -87,13 +86,10 @@
     max-width: 1440px;
     background-size: 1440px 960px;
   }
-
-  @keyframes marqueeLine {
-    0% {
-      transform: translateX(10%);
-    }
-    100% {
-      transform: translateX(-35%);
-    }
+  .covers__image {
+    animation: none;
+  }
+  .covers__item:last-child {
+    justify-content: flex-start;
   }
 }
