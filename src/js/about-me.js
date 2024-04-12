@@ -24,6 +24,7 @@ const swiperAboutMe = new Swiper('.about-me-swiper', {
   },
   loop: true,
   slidesPerView: 2,
+  slideActiveClass: 'about-me-swiper-slide-active',
   breakpoints: {
     // when window width is >= 768px
     768: {
