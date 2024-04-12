@@ -170,7 +170,7 @@ ul .faq-list-item:nth-child(odd)::before {
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
-    .container {
+    .faq-section {
         padding-bottom: 32px;
     }
     .faq-list {
