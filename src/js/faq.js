@@ -1,3 +1,4 @@
+
 const faqs = document.querySelectorAll(".faq-accordion");
 
 faqs.forEach(faq => {
