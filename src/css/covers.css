@@ -10,20 +10,18 @@
 
   background-image: linear-gradient(
       to right,
-      rgba(217, 217, 217, 0.4),
-      rgba(217, 217, 217, 0.4)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url('../img/covers/Ellipse-grop.png');
   background-size: 375px 508px;
-  background-color: rgba(47, 48, 58, 0.4);
   overflow: hidden;
 }
+
 .covers__list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   gap: 30px;
 
   overflow: hidden;
@@ -31,29 +29,67 @@
 
 .covers__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 20px;
+
   transform: rotate(17deg);
 }
+
 .covers__image {
   width: 280px;
-  margin-right: 20px;
-
-  flex-shrink: 0;
-  /* width: calc(100% / 5); */
-  white-space: nowrap;
+  height: auto;
   animation-name: marqueeLine;
-
-  animation-duration: 5s;
+  animation-duration: 8s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes marqueeLine {
-  from {
+  0% {
     transform: translateX(50%);
   }
-
-  to {
+  100% {
     transform: translateX(-40%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers {
+    max-width: 768px;
+    max-height: 960px;
+    background-size: 768px 960px;
+  }
+  .covers__image {
+    width: 540px;
+    height: auto;
+  }
+  .covers__list {
+    gap: 60px;
+  }
+  .covers__item {
+    gap: 40px;
+  }
+
+  @keyframes marqueeLine {
+    0% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(-35%);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers {
+    max-width: 1440px;
+    background-size: 1440px 960px;
+  }
+  .covers__image {
+    animation: none;
+  }
+  .covers__item:last-child {
+    justify-content: flex-start;
   }
 }
