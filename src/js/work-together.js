@@ -31,7 +31,7 @@ function validateEmail() {
   if (emailRegex.test(emailInput.value.trim())) {
     emailInput.classList.remove('invalid');
     emailInput.classList.add('valid');
-    inputFields.dataset.status = 'Succes!';
+    inputFields.dataset.status = 'Success!';
     inputFields.style.setProperty('--status-color', '#3cbc81');
   } else {
     emailInput.classList.remove('valid');

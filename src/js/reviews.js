@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.reviews__swiper', {
   modules: [Keyboard],
   keyboard: {
     enabled: true,
