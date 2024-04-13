@@ -90,6 +90,8 @@
     display: flex;
     justify-content: center;
     gap: 12px;
+                /* margin-right: auto;
+                    margin-left: auto; */
 }
 
 .project-btn-swap-left, 
@@ -115,11 +117,7 @@
 /* =======================tablet======================= */
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+
         .project-list-style {
             max-width: 704px;
         }
@@ -151,8 +149,8 @@
         }
         
         .project-btn-swap-design {
-            margin-right: auto;
-            margin-left: auto;
+            /* margin-right: auto;
+            margin-left: auto; */
         }
     
 }
@@ -160,10 +158,6 @@
 /* ======================descktop====================== */
 
  @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
-
  
 
  .project-list {

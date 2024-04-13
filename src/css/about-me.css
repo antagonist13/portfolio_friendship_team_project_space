@@ -134,7 +134,7 @@ body {
 }
 
 .swiper-slide-active {
-  background-color: rgb(237, 59, 68);
+  /* background-color: rgb(237, 59, 68); */
   border: 0px solid transparent;
 }
 
