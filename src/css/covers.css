@@ -38,7 +38,7 @@
 .covers__image {
   width: 280px;
   height: auto;
-  animation-name: marqueeLine;
+  animation-name: none;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -92,4 +92,8 @@
   .covers__item:last-child {
     justify-content: flex-start;
   }
+}
+
+.active {
+  animation-name: marqueeLine;
 }
