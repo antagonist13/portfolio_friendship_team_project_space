@@ -65,3 +65,9 @@
     margin-top: 64px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
