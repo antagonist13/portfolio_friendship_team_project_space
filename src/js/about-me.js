@@ -6,14 +6,42 @@ import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
 import { Mousewheel } from 'swiper/modules';
 
-new Accordion('.accordion-container', {
+//============== Accordion ==================
+
+new Accordion('.about-me-accordion-container', {
   openOnInit: [0],
   showMultiple: true,
 });
 
+const accordionBtns = document.querySelectorAll('.about-me-ac-trigger');
+
+accordionBtns.forEach(btn => {
+  btn.addEventListener('click', onAccordionBtn);
+});
+
+function onAccordionBtn(event) {
+  const divBtn = event.currentTarget.firstElementChild;
+  const statusBtn = divBtn.dataset.status;
+  const downSvg = `<svg>
+                <use href="/img/sprite.svg#icon-arrow-down"></use>
+              </svg>`;
+  const upSvg = `<svg>
+                <use href="/img/sprite.svg#icon-arrow-up"></use>
+              </svg>`;
+  if (statusBtn === 'open') {
+    divBtn.innerHTML = downSvg;
+    divBtn.dataset.status = 'close';
+  } else {
+    divBtn.innerHTML = upSvg;
+    divBtn.dataset.status = 'open';
+  }
+}
+
+//================= Swipere ==================
+
 const nextBtn = document.querySelector('.about-me-swiper-next');
 
-let swiperAboutMe = new Swiper('.mySwiper', {
+const swiperAboutMe = new Swiper('.about-me-swiper', {
   modules: [Keyboard, Mousewheel],
   keyboard: {
     enabled: true,
@@ -24,6 +52,7 @@ let swiperAboutMe = new Swiper('.mySwiper', {
   },
   loop: true,
   slidesPerView: 2,
+  slideActiveClass: 'about-me-swiper-slide-active',
   breakpoints: {
     // when window width is >= 768px
     768: {
@@ -37,5 +66,3 @@ let swiperAboutMe = new Swiper('.mySwiper', {
 });
 
 nextBtn.addEventListener('click', () => swiperAboutMe.slideNext());
-
-window.addEventListener('resize', () => swiperAboutMe.update());
