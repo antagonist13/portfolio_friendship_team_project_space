@@ -68,3 +68,19 @@
     width: calc((100% - 16px) / 2);
   }
 }
+@media screen and (min-width: 1440px) {
+  .benefits-section {
+    width: 1376px;
+  }
+  .benefits-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .benefits-wrapper {
+    width: 680px;
+  }
+  .benefits-item {
+    width: 332px;
+  }
+}
