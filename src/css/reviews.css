@@ -15,12 +15,19 @@
 
 .reviews__list {
   margin: 32px 0;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 343px;
+}
+
+.non_info {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .reviews__item {
+  height: auto !important;
   padding: 32px 24px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
@@ -70,4 +77,17 @@
 .disabled_btn {
   border-color: #3b3b3b;
   stroke: #3b3b3b;
+  cursor: auto;
+}
+
+@media (min-width: 768px) {
+  .reviews__section {
+    padding: 96px 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews__section {
+    padding: 164px 32px;
+  }
 }

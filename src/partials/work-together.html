@@ -1,0 +1,67 @@
+<footer class="footer" id="work-together">
+  <div class="container footer-container">
+    <div class="work-together">
+      <img
+        class="footer-img"
+        srcset="
+          ../img/header/logo-jefferson.jpg    1x,
+          ../img/header/logo-jefferson@2x.jpg 2x
+        "
+        src="../img/header/logo-jefferson.jpg"
+        alt="Lloyd Jeffersonr"
+      />
+
+      <h2 class="footer-header">
+        Let’s <span class="footer-header text-red"> work</span> <br />
+        together
+      </h2>
+    </div>
+
+    <form class="footer-form">
+      <div class="form-fields" data-status="">
+        <input
+          type="email"
+          required
+          name="userEmail"
+          id="user-email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+          class="form-input"
+        />
+        <input
+          type="text"
+          required
+          name="userComment"
+          id="user-comment"
+          placeholder="comments"
+          class="form-input"
+        />
+      </div>
+      <button type="submit" class="send-form-btn">Send</button>
+    </form>
+
+    <div class="footer-links">
+      <a href="mailto:lloydjefferson@gmail.com" class="link"
+        >lloydjefferson@gmail.com</a
+      >
+      <a href="tel:+3801111111111" class="link">+380 11 1111 11 11</a>
+    </div>
+  </div>
+</footer>
+
+<!-- add is-open class -->
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-btn-icon">
+        <use href="../img/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+    <p class="modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>

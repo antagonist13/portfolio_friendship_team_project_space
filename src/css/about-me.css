@@ -1,0 +1,227 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.about-me {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.about-me-wrapper {
+  margin-bottom: 32px;
+}
+
+.about-me-wrapper-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 32px 32px 272px;
+  border-radius: 24px;
+  background: rgb(36, 37, 39);
+  margin-bottom: 16px;
+}
+
+.about-me-wrapper-text-red {
+  color: rgb(237, 59, 68);
+}
+
+.about-me-wrapper-text-grey {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-wrapper-foto {
+  border-radius: 24px;
+}
+
+/*----------------- ACCARDION STYLES ---------------*/
+
+.accordion-container {
+  margin-bottom: 32px;
+}
+
+.accordion-container .ac {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 32px;
+  margin-top: 20px;
+}
+
+.accordion-container .ac .ac-header {
+  margin-bottom: 12px;
+}
+
+.accordion-container .ac .ac-trigger {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  padding: 0;
+}
+
+.accordion-container .ac .ac-panel .ac-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 0;
+}
+
+.accordion-container .ac .ac-panel .ac-text:first-child {
+  margin-bottom: 32px;
+}
+
+.accordion-container .ac .ac-trigger::after {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* content: url('./img/icon1.svg'); */
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+}
+
+.accordion-container .ac.is-active > .ac-header .ac-trigger::after {
+  stroke: #fafafa;
+  color: white;
+  /* content: url('/img/sprite.svg/#icon-small-arrow-up'); */
+}
+
+.accordion-container .ac .ac-panel .ac-text li:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+/*----------------- SWIPER STYLES ---------------*/
+
+.about-me-sweper-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about-me-swiper {
+  width: 260px;
+  height: 130px;
+  margin: 0;
+}
+
+.about-me-swiper-slide {
+  color: rgb(250, 250, 250);
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 130px;
+  height: 130px;
+}
+
+.about-me-swiper-slide-active {
+  background-color: rgb(237, 59, 68);
+  border: 0px solid transparent;
+}
+
+.about-me-swiper-next {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  stroke: rgb(59, 59, 59);
+}
+
+/*=========================== TABLET ==========================*/
+
+@media screen and (min-width: 768px) {
+  about-me {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .about-me-wrapper {
+    margin-bottom: 64px;
+  }
+
+  .about-me-wrapper-text {
+    font-size: 38px;
+    line-height: 40px;
+    padding: 64px 64px 436px;
+    border-radius: 24px;
+  }
+
+  .accordion-container {
+    margin-bottom: 64px;
+  }
+  /*=========================== TABLET Swiper==========================*/
+
+  .about-me-swiper {
+    width: 600px;
+    height: 200px;
+  }
+
+  .about-me-swiper-slide {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*=========================== DESKTOP ==========================*/
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 48px;
+    padding-bottom: 82px;
+  }
+
+  .about-me-wrapper {
+    display: flex;
+    column-gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+
+  .about-me-wrapper-text {
+    font-size: 38px;
+    padding: 64px 64px 436px;
+    width: 680px;
+    margin-bottom: 0;
+  }
+
+  .accordion-container {
+    margin-bottom: 64px;
+  }
+
+  .accordion-container .ac .ac-panel {
+    padding-left: 698px;
+  }
+
+  /*=========================== DESCTOP Swiper==========================*/
+
+  .about-me-swiper {
+    width: 1200px;
+    height: 200px;
+  }
+
+  .about-me-swiper-slide {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -115,7 +115,6 @@
 /* =======================tablet======================= */
 
 @media screen and (min-width: 768px) {
-
     .project-list-style {
         max-width: 704px;
     }
@@ -150,7 +149,6 @@
         margin-right: auto;
         margin-left: auto;
     }
-
 }
 
 /* ======================descktop====================== */
