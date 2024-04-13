@@ -5,8 +5,8 @@ import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
 import { getData } from './portfolio-api';
 
-const btnPrev = document.querySelector('.swiper-button-prev');
-const btnNext = document.querySelector('.swiper-button-next');
+const btnPrev = document.querySelector('.reviews__arrow-left');
+const btnNext = document.querySelector('.reviews__arrow-right');
 const reviewsList = document.querySelector('.reviews__list');
 
 document.addEventListener('DOMContentLoaded', () => {
