@@ -133,9 +133,17 @@ body {
   height: 130px;
 }
 
-.swiper-slide-active {
+.about-me-swiper-slide-active {
   background-color: rgb(237, 59, 68);
   border: 0px solid transparent;
+}
+
+.about-me-swiper-next {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  stroke: rgb(59, 59, 59);
 }
 
 /*=========================== TABLET ==========================*/
@@ -152,7 +160,7 @@ body {
 
   .about-me-wrapper-text {
     font-size: 38px;
-    line-height: 48px;
+    line-height: 40px;
     padding: 64px 64px 436px;
     border-radius: 24px;
   }
@@ -174,8 +182,46 @@ body {
   }
 }
 
+/*=========================== DESKTOP ==========================*/
+
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+  .about-me {
+    padding-top: 48px;
+    padding-bottom: 82px;
+  }
+
+  .about-me-wrapper {
+    display: flex;
+    column-gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 96px;
+  }
+
+  .about-me-wrapper-text {
+    font-size: 38px;
+    padding: 64px 64px 436px;
+    width: 680px;
+    margin-bottom: 0;
+  }
+
+  .accordion-container {
+    margin-bottom: 64px;
+  }
+
+  .accordion-container .ac .ac-panel {
+    padding-left: 698px;
+  }
+
+  /*=========================== DESCTOP Swiper==========================*/
+
+  .about-me-swiper {
+    width: 1200px;
+    height: 200px;
+  }
+
+  .about-me-swiper-slide {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
   }
 }
