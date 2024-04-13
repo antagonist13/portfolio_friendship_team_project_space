@@ -19,72 +19,87 @@
     <script type="module" crossorigin src="/portfolio_friendship_team_project_space/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio_friendship_team_project_space/assets/vendor-6e66b841.js">
     <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/vendor-23d9f17b.css">
-    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-1dff3170.css">
+    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-77807c9d.css">
   </head>
   <body>
     <header class="header">
-    <div class="header-container">
-        
-        <div class="header-container-avatar">
-            <a href="../index.html" class="header-avatar">
-                <img class="avatar-logo" srcset="../img/header/logo-jefferson.jpg 80w,
-                ../img/header/logo-jefferson@2x.jpg 80w"
-                src="../img/header/logo-jefferson@2x.jpg" 
-                width="80px" height="80px" alt="header avatar">
-            </a>
-            <p class="avatar-name">jefferson*</p>
-        </div>
-
-
-        <div id="profile">
-            <a class="menu-list" href="#" id="profile-link">Menu</a>
-
-            <div id="dropdown">
-                <ul class="menu-nav">
-                    <li class="menu-nav-item"><a class="sections-link" href="#about-me">About me</a></li>
-                    <li class="menu-nav-item"><a class="sections-link" href="#benefits">Benefits</a></li>
-                    <li class="menu-nav-item"><a class="sections-link" href="#project">Projects</a></li>
-                    <li class="menu-nav-item"><a class="sections-link" href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="order-button-container">
-            <a class="header-order-button" href="#work-together">Order the project</a>
-        </div>
-        
-
-        <!-- Modal window mobile -->
-
-        <button type="button" class="burger-open-button visually-hidden" data-menu-open>  <!-- to see modal delete 3x visually-hidden -->
-            <svg class="burger-open-icon" width="21" height="8">
-                <use href="../img/sprite.svg#icon-menu-burger"></use>
-            </svg>
-        </button>
-
-        <div class="burger-menu-container visually-hidden" data-menu>
-
-            <button type="button" class="burger-close-button visually-hidden" data-menu-close>
-                <svg class="burger-close-icon" width="28" height="28">
-                    <use href="../img/sprite.svg#icon-x"></use>
-                </svg>
-            </button>
-
-            <nav class="burger-nav-menu">
-                <ul class="burger-nav-list">
-                  <li><a href="#about-me" class="burger-nav-link">About me</a></li>
-                  <li><a href="#benefits" class="burger-nav-link">Benefits</a></li>
-                  <li><a href="#project" class="burger-nav-link">Project</a></li>
-                  <li><a href="#faq" class="burger-nav-link">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <div class="navigation-background"></div>
-        </div>
-
-
+  <div class="header-container">
+    <div class="header-container-avatar">
+      <a href="../index.html" class="header-avatar">
+        <img
+          class="avatar-logo"
+          srcset="
+            ../img/header/logo-jefferson.jpg    80w,
+            ../img/header/logo-jefferson@2x.jpg 80w
+          "
+          src="../img/header/logo-jefferson@2x.jpg"
+          width="80px"
+          height="80px"
+          alt="header avatar"
+        />
+      </a>
+      <p class="avatar-name">jefferson*</p>
     </div>
+
+    <div id="profile">
+      <a class="menu-list" href="#" id="profile-link">Menu</a>
+
+      <div id="dropdown">
+        <ul class="menu-nav">
+          <li class="menu-nav-item">
+            <a class="sections-link" href="#about-me">About me</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="sections-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="sections-link" href="#project">Projects</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="sections-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="order-button-container">
+      <a class="header-order-button" href="#work-together">Order the project</a>
+    </div>
+
+    <!-- Modal window mobile -->
+
+    <button
+      type="button"
+      class="burger-open-button visually-hidden"
+      data-menu-open
+    >
+      <!-- to see modal delete 3x visually-hidden -->
+      <svg class="burger-open-icon" width="21" height="8">
+        <use href="../img/sprite.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
+
+    <div class="burger-menu-container" data-menu>
+      <button type="button" class="burger-close-button" data-menu-close>
+        <svg class="burger-close-icon" width="28" height="28">
+          <use href="../img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <nav class="burger-nav-menu">
+        <ul class="burger-nav-list">
+          <li><a href="#about-me" class="burger-nav-link">About me</a></li>
+          <li><a href="#benefits" class="burger-nav-link">Benefits</a></li>
+          <li><a href="#project" class="burger-nav-link">Project</a></li>
+          <li><a href="#faq" class="burger-nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="navigation-background"></div>
+    </div>
+  </div>
 </header>
+
     <section class="hero">
         <h1 class="hero-title">
             Hello.<br>I’m Fullstack developer<br> Lloyd Jefferson.
@@ -400,7 +415,7 @@
     </div>
 </section>
 
-    <section id="faq"><section class="faq-section" id="faq">
+    <section class="faq-section" id="faq">
     <div class="container faq-accordion-container">
     <h2 class="faq-main-title">FAQ</h2>
 
@@ -522,7 +537,7 @@
         </ul>
         
 </div>
-</section></section>
+</section>
     <section class="covers">
   <h2 class="visually-hidden">Gallery of works covers</h2>
   <ul class="covers__list">
