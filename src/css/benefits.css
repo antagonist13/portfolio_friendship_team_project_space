@@ -14,13 +14,14 @@
   margin-bottom: 32px;
 }
 .benefits-list {
-  margin-bottom: 8px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .benefits-item {
   background: #242527;
   border-radius: 20px;
   padding-top: 24px;
-  margin-bottom: 16px;
 }
 .benefits-icon {
   background: #ed3b44;
@@ -33,6 +34,7 @@
 }
 .svg-icon {
   fill: #f4f4fd;
+  stroke: #f4f4fd;
   width: 24px;
   height: 24px;
 }
@@ -45,6 +47,8 @@
   padding-bottom: 24px;
 }
 .order-link {
+  display: block;
+  margin-top: 32px;
   font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
@@ -52,6 +56,18 @@
   letter-spacing: -0.02em;
   text-align: left;
   padding: 18px 36px 18px 36px;
+  max-width: 198px;
   border-radius: 60px;
   border: 1px solid #fafafa33;
+}
+@media screen and (min-width: 768px) {
+  .order-link {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: calc((100% - 16px) / 2);
+  }
 }
