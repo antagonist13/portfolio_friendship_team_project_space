@@ -8,7 +8,7 @@ import { Mousewheel } from 'swiper/modules';
 
 //============== Accordion ==================
 
-new Accordion('.accordion-container', {
+new Accordion('.about-me-accordion-container', {
   openOnInit: [0],
   showMultiple: true,
 });
