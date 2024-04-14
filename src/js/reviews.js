@@ -65,15 +65,15 @@ const swiper = new Swiper('.reviews__swiper', {
 
 btnPrev.addEventListener('click', () => {
   swiper.slidePrev();
-  if (btnNext.classList.contains('disabled_btn')) {
-    btnNext.classList.remove('disabled_btn');
-  }
 });
+
 btnNext.addEventListener('click', () => {
   swiper.slideNext();
-  if (btnPrev.classList.contains('disabled_btn')) {
-    btnPrev.classList.remove('disabled_btn');
-  }
+});
+
+swiper.on('fromEdge', () => {
+  btnPrev.classList.remove('disabled_btn');
+  btnNext.classList.remove('disabled_btn');
 });
 
 swiper.on('reachBeginning', () => {
