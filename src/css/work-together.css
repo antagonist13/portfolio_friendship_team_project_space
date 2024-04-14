@@ -1,6 +1,7 @@
 .footer {
   margin-top: 32px;
   position: relative;
+  overflow: hidden;
 }
 
 .footer::before {
