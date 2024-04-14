@@ -72,6 +72,7 @@ img {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
 }
 
 @media screen and (min-width: 768px) {
