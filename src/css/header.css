@@ -13,7 +13,7 @@
 .background {
   overflow-x: auto;
   position: absolute;
-  left: -200px;
+  left: -300px;
   top: 0;
   height: 812px;
   display: flex;
@@ -370,7 +370,13 @@
     display: flex;
     justify-content: space-between;
   }
-
+  .background {
+    left: -160px;
+    height: 1024px;
+  }
+  .transparent {
+    width: 70px;
+  }
   .header-container-avatar {
     display: flex;
     justify-content: space-between;
@@ -491,7 +497,10 @@
     display: flex;
     justify-content: space-between;
   }
-
+  .background {
+    left: 0;
+    height: 900px;
+  }
   .header-container-avatar {
     display: flex;
     justify-content: space-between;
