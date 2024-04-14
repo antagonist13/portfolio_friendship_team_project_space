@@ -25,11 +25,28 @@ document.getElementById("profile-link").addEventListener("click", function(event
       modal: document.querySelector('[data-menu]'),
     };
   
-    refs.modal.classList.add("visually-hidden")
+    
+    refs.modal.classList.add("visually-hidden");
     refs.closeModalBtn.addEventListener('click', toggleModal);
     refs.openModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.modal.classList.toggle('visually-hidden');
+      refs.openModalBtn.classList.toggle('visually-hidden');
+      refs.closeModalBtn.classList.toggle('visually-hidden');
+      
     }
+
+
+    const dropModal = refs.modal.addEventListener('click', toggleModal);
+    if (dropModal.classList.contains("visually-hidden")) {
+      dropModal.classList.remove("visually-hidden");
+      dropModal.style.opacity = 0;
+    } else {
+      dropModal.classList.add("visually-hidden");
+      setTimeout(() => {
+        dropModal.style.opacity = 1;
+      }, 10); 
+    }
+
   })(); 
