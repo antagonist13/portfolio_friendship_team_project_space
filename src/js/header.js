@@ -25,8 +25,9 @@ document.getElementById("profile-link").addEventListener("click", function(event
       modal: document.querySelector('[data-menu]'),
     };
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.modal.classList.add("visually-hidden")
     refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.modal.classList.toggle('visually-hidden');
