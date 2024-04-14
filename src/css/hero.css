@@ -1,16 +1,24 @@
 
+
 .hero {   
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 812px;
     padding-left: 16px;
     padding-right: 16px;
-    background-image: url(../img/header/background-image.png); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background-image: url(../img/header/background-image.png);  */
+    /* background-repeat: no-repeat; */
+    /* background-position: center;  */
+    /* background-size: cover;  */
+    background: linear-gradient(270.00deg, rgb(28, 29, 32) 49.712%,rgb(105, 41, 45) 67.655%,rgb(237, 59, 68) 99.721%);  
+    
+    
 }   
+
+
+
 
 .hero-title {
     color: rgb(250, 250, 250);
