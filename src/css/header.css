@@ -175,6 +175,14 @@
     background-position: center bottom;
 
 }
+
+#profile {
+    display: none;
+}
+
+#dropdown {
+    display: none;
+}
 /* ==================== MODAL ended ===================== */
 
 
@@ -324,12 +332,16 @@
     background-position: center bottom;
 
 }
+
+#profile {
+    display: none;
+}
+
+#dropdown {
+    display: none;
+}
 /* ==================== MODAL ended ===================== */
  
-
-
-
-
 }
 
 
@@ -411,6 +423,11 @@
         transition: opacity 0.2s ease-in-out;
     }
     
+    #profile {
+        display: block;
+        opacity: 1;
+    }
+
     #profile.active #dropdown {
         display: block;
         opacity: 1;
