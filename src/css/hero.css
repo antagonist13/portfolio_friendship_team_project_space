@@ -9,9 +9,9 @@
     padding-left: 16px;
     padding-right: 16px;
     /* background-image: url(../img/header/background-image.png);  */
-    /* background-repeat: no-repeat; */
-    /* background-position: center;  */
-    /* background-size: cover;  */
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-size: cover;  
     background: linear-gradient(270.00deg, rgb(28, 29, 32) 49.712%,rgb(105, 41, 45) 67.655%,rgb(237, 59, 68) 99.721%);  
     
     
@@ -36,6 +36,8 @@
     display: flex; 
     justify-content: flex-end;
     gap: 4px;
+    
+    
 }
 
 .social-media-list-item {
@@ -62,9 +64,24 @@
 }
 
 .social-media-list-item:last-child {
-    width: 160px;
+    width: 178px;
     height: 37px;
 }
+
+.social-media-list-item:hover, 
+.social-media-list-item:focus,
+.social-media-list-item:active,
+.contacts:hover,
+.contacts:focus,
+.contacts:active {
+    background-color: rgb(250, 250, 250);
+    color: red;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
 
 .contacts {
     display: flex;
@@ -81,19 +98,7 @@
     text-align: left;
 }
 
-.social-media-list-item:hover, 
-.social-media-list-item:focus,
-.social-media-list-item:active,
-.contacts:hover,
-.contacts:focus,
-.contacts:active {
-    background-color: rgb(250, 250, 250);
-    color: #000000;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    
-    box-sizing: border-box;
-    border-radius: 60px;
-}
+
 
 
 /* ============== TABLET =============== */
@@ -123,8 +128,8 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
-        width: 56px;
-        height: 56px;
+        width: 55px;
+        height: 55px;
     }
 
     .social-media-list-item:last-child {
@@ -155,7 +160,7 @@
     .contacts:focus,
     .contacts:active {
         background-color: rgb(250, 250, 250);
-        color: #000000;
+        color: red;
         border: 1px solid rgba(250, 250, 250, 0.2);
         
         box-sizing: border-box;
@@ -235,7 +240,7 @@
     .contacts:focus,
     .contacts:active {
         background-color: rgb(250, 250, 250);
-        color: #000000;
+        color: red;
         border: 1px solid rgba(250, 250, 250, 0.2);
         
         box-sizing: border-box;
