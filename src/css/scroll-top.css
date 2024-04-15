@@ -1,0 +1,33 @@
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #fafafa;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  background-color: transparent;
+  transition: all 1s;
+  animation: shadow 1s infinite linear;
+}
+
+@keyframes shadow {
+  0% {
+    scale: 1.2;
+    box-shadow: 0 0 2px 0px rgba(250, 250, 250, 0.2),
+      0 0 2px 0px rgba(250, 250, 250, 0.2);
+  }
+  100% {
+    scale: 1;
+    box-shadow: 0 0 3px 3px rgba(250, 250, 250, 0.2),
+      0 0 21px 5px rgba(250, 250, 250, 0.2);
+  }
+}
+.scroll-top:hover {
+  scale: 1.2;
+  background-color: transparent;
+}
