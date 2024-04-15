@@ -19,10 +19,54 @@
     <script type="module" crossorigin src="/portfolio_friendship_team_project_space/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio_friendship_team_project_space/assets/vendor-6e66b841.js">
     <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/vendor-23d9f17b.css">
-    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-2c5a6c02.css">
+    <link rel="stylesheet" href="/portfolio_friendship_team_project_space/assets/index-ff4939b4.css">
   </head>
   <body>
-    <header class="header">
+    <!-- =======Modal window mobile======= -->
+<div class="burger-menu-container visually-hidden" data-menu>
+  <div class="background-mobile-window">
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+    <div class="transparent-mobile-window"></div>
+  </div>
+  <div class="modal-btn">
+    <button type="button" class="burger-close-button" data-menu-close>
+      <svg class="burger-close-icon" width="28" height="28">
+        <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-x"></use>
+      </svg>
+    </button>
+  </div>
+  <nav class="burger-nav-menu">
+    <ul class="burger-nav-list">
+      <li class="burger-nav-item">
+        <a href="#about-me" class="burger-nav-link">About me</a>
+      </li>
+      <li class="burger-nav-item">
+        <a href="#benefits" class="burger-nav-link">Benefits</a>
+      </li>
+      <li class="burger-nav-item">
+        <a href="#project" class="burger-nav-link">Project</a>
+      </li>
+      <li class="burger-nav-item">
+        <a href="#faq" class="burger-nav-link">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="burger-order-button-container">
+    <a class="burger-order-button" href="#work-together">Order the project</a>
+  </div>
+
+  <div class="navigation-background"></div>
+</div>
+<!-- ================================== -->
+<header class="header">
   <div class="background">
     <div class="transparent"></div>
     <div class="transparent"></div>
@@ -79,57 +123,11 @@
       <a class="header-order-button" href="#work-together">Order the project</a>
     </div>
 
-    <!-- =======Modal window mobile======= -->
     <button type="button" class="burger-open-button" data-menu-open>
       <svg class="burger-open-icon" width="28" height="28">
         <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-menu-burger"></use>
       </svg>
     </button>
-
-    <div class="burger-menu-container" data-menu>
-      <div class="background-mobile-window">
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-        <div class="transparent-mobile-window"></div>
-      </div>
-      <button type="button" class="burger-close-button" data-menu-close>
-        <svg class="burger-close-icon" width="28" height="28">
-          <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-x"></use>
-        </svg>
-      </button>
-
-      <nav class="burger-nav-menu">
-        <ul class="burger-nav-list">
-          <li class="burger-nav-item">
-            <a href="#about-me" class="burger-nav-link">About me</a>
-          </li>
-          <li class="burger-nav-item">
-            <a href="#benefits" class="burger-nav-link">Benefits</a>
-          </li>
-          <li class="burger-nav-item">
-            <a href="#project" class="burger-nav-link">Project</a>
-          </li>
-          <li class="burger-nav-item">
-            <a href="#faq" class="burger-nav-link">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="burger-order-button-container">
-        <a class="burger-order-button" href="#work-together"
-          >Order the project</a
-        >
-      </div>
-
-      <div class="navigation-background"></div>
-    </div>
-    <!-- ================================== -->
   </div>
 </header>
 
@@ -141,23 +139,36 @@
 
   <ul class="social-media-list">
     <li class="social-media-list-item">
-      <a class="contacts" href="https://www.instagram.com/goitclub/">IG</a>
+      <a
+        class="contacts"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        >IG</a
+      >
     </li>
     <li class="social-media-list-item">
-      <a class="contacts" href="https://www.facebook.com/goITclub/">FB</a>
+      <a
+        class="contacts"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        >FB</a
+      >
     </li>
     <li class="social-media-list-item">
-      <a class="contacts" href="https://www.youtube.com/c/GoIT">YT</a>
+      <a class="contacts" href="https://www.youtube.com/c/GoIT" target="_blank"
+        >YT</a
+      >
     </li>
     <li class="social-media-list-item">
       <a
         class="contacts"
         href="https://github.com/antagonist13/portfolio_friendship_team_project_space"
+        target="_blank"
         >GH</a
       >
     </li>
     <li class="social-media-list-item">
-      <a class="contacts" href="mailto:lloydjefferson@gmail.com"
+      <a class="contacts" href="mailto:lloydjefferson@gmail.com" target="_blank"
         >lloydjefferson@gmail.com</a
       >
     </li>
