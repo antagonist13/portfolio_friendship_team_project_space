@@ -23,29 +23,20 @@ document.getElementById("profile-link").addEventListener("click", function(event
       openModalBtn: document.querySelector('[data-menu-open]'),
       closeModalBtn: document.querySelector('[data-menu-close]'),
       modal: document.querySelector('[data-menu]'),
-    };
-  
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.modal.addEventListener('click', toggleModal);
+      navItemList: document.querySelectorAll(".burger-nav-item")
+};
+    refs.openModalBtn.addEventListener('click', modaleOpen);
+    refs.closeModalBtn.addEventListener('click', modaleClose);
     
+    // refs.modal.addEventListener('click', toggleModal);
+    function modaleOpen() {
+      refs.modal.classList.remove('visually-hidden');
+}
+    function modaleClose() {
+      refs.modal.classList.add('visually-hidden');
+}
   
-    function toggleModal() {
-      refs.modal.classList.toggle('visually-hidden');
-      refs.openModalBtn.classList.toggle('visually-hidden');
-      refs.closeModalBtn.classList.toggle('visually-hidden');
-      
-    refs.openModalBtn.classList.remove("visually-hidden");
-    }
-
-    if (refs.modal.classList.contains("visually-hidden")) {
-      refs.modal.classList.remove("visually-hidden");
-      refs.modal.style.opacity = 0;
-    } else {
-      refs.modal.classList.add("visually-hidden");
-      setTimeout(() => {
-        refs.modal.style.opacity = 1;
-      }, 10); 
-    }
-
+refs.navItemList.forEach((item) => {
+  item.addEventListener('click', modaleClose);
+})
  
