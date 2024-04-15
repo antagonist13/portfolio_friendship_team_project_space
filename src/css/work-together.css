@@ -93,6 +93,14 @@
   border-bottom: 1px solid #e74a3b;
 }
 
+#user-comment.valid {
+  border-bottom: 1px solid #3cbc81;
+}
+
+#user-comment.invalid {
+  border-bottom: 1px solid #e74a3b;
+}
+
 .form-input::placeholder {
   position: absolute;
   top: 0;
