@@ -1,6 +1,5 @@
 const coversEl = document.querySelector('.covers');
 const imageEL = document.querySelectorAll('.covers__image');
-console.log(imageEL);
 
 const observer = new IntersectionObserver(observerCallback);
 
