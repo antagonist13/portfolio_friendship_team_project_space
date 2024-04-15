@@ -107,14 +107,21 @@
   position: absolute;
   z-index: 999;
   width: 100%;
-  max-height: auto;
+  height: 100%;
   top: 0;
   right: 0;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+.modal-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 .burger-close-button {
   width: 28px;
   height: 28px;
@@ -153,8 +160,6 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding-top: 242px;
-  padding-bottom: 289px;
 }
 
 .burger-nav-link {
@@ -188,7 +193,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 64px;
   margin-right: auto;
   margin-left: auto;
 
@@ -265,18 +270,6 @@
     height: 28px;
   }
 
-  .burger-menu-container {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    height: 812px;
-    top: 0;
-    right: 0;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .burger-close-icon {
     display: flex;
     justify-content: center;
@@ -299,36 +292,6 @@
     align-items: center;
     gap: 12px;
     padding: 0px;
-  }
-
-  .burger-order-button {
-    border-radius: 60px;
-    background-color: rgb(237, 59, 68);
-    width: 163px;
-    height: 55px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 70px;
-    margin-right: auto;
-    margin-left: auto;
-
-    color: rgb(250, 250, 250);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0.02%;
-    text-align: left;
-  }
-
-  .burger-order-button:hover,
-  .burger-order-button:focus,
-  .burger-order-button:active {
-    background-color: rgb(250, 250, 250);
-    color: red;
-    transition: 0.3s ease-in-out;
   }
 
   .navigation-background {
@@ -357,9 +320,6 @@
     display: none;
   }
 
-  #dropdown {
-    display: none;
-  }
   /* ==================== MODAL ended ===================== */
 }
 
