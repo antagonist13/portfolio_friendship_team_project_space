@@ -18,35 +18,34 @@ document.getElementById("profile-link").addEventListener("click", function(event
 
 
 
-  (() => {
+  
     const refs = {
       openModalBtn: document.querySelector('[data-menu-open]'),
       closeModalBtn: document.querySelector('[data-menu-close]'),
       modal: document.querySelector('[data-menu]'),
     };
   
-    
-    refs.modal.classList.add("visually-hidden");
     refs.closeModalBtn.addEventListener('click', toggleModal);
     refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.modal.addEventListener('click', toggleModal);
+    
   
     function toggleModal() {
       refs.modal.classList.toggle('visually-hidden');
       refs.openModalBtn.classList.toggle('visually-hidden');
       refs.closeModalBtn.classList.toggle('visually-hidden');
       
+    refs.openModalBtn.classList.remove("visually-hidden");
     }
 
+    if (refs.modal.classList.contains("visually-hidden")) {
+      refs.modal.classList.remove("visually-hidden");
+      refs.modal.style.opacity = 0;
+    } else {
+      refs.modal.classList.add("visually-hidden");
+      setTimeout(() => {
+        refs.modal.style.opacity = 1;
+      }, 10); 
+    }
 
-    // const dropModal = refs.modal.addEventListener('click', toggleModal);
-    // if (dropModal.classList.contains("visually-hidden")) {
-    //   dropModal.classList.remove("visually-hidden");
-    //   dropModal.style.opacity = 0;
-    // } else {
-    //   dropModal.classList.add("visually-hidden");
-    //   setTimeout(() => {
-    //     dropModal.style.opacity = 1;
-    //   }, 10); 
-    // }
-
-  }) 
+ 
