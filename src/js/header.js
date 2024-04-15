@@ -23,7 +23,8 @@ document.getElementById("profile-link").addEventListener("click", function(event
       openModalBtn: document.querySelector('[data-menu-open]'),
       closeModalBtn: document.querySelector('[data-menu-close]'),
       modal: document.querySelector('[data-menu]'),
-      navItemList: document.querySelectorAll(".burger-nav-item")
+      navItemList: document.querySelectorAll(".burger-nav-item"),
+      orderBtn: document.querySelector(".burger-order-button")
 };
     refs.openModalBtn.addEventListener('click', modaleOpen);
     refs.closeModalBtn.addEventListener('click', modaleClose);
@@ -39,4 +40,4 @@ document.getElementById("profile-link").addEventListener("click", function(event
 refs.navItemList.forEach((item) => {
   item.addEventListener('click', modaleClose);
 })
- 
+ refs.orderBtn.addEventListener('click', modaleClose)
