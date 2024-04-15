@@ -1,10 +1,11 @@
-
+const profile = document.getElementById("profile")
 
 document.getElementById("profile-link").addEventListener("click", function(event) {
     event.preventDefault();
-    document.getElementById("profile").classList.toggle("active");
+    profile.classList.toggle("active");
   
-    const dropdown = document.getElementById("dropdown");
+  const dropdown = document.getElementById("dropdown");
+  
     if (dropdown.classList.contains("active")) {
       dropdown.classList.remove("active");
       dropdown.style.opacity = 0;
@@ -15,8 +16,22 @@ document.getElementById("profile-link").addEventListener("click", function(event
       }, 10); 
     }
   });
+const dropdownItem = document.querySelectorAll(".menu-nav-item")
+dropdownItem.forEach((item) => {
+  item.addEventListener('click', () => {
 
-
+    profile.classList.toggle("active");
+    if (dropdown.classList.contains("active")) {
+      dropdown.classList.remove("active");
+      dropdown.style.opacity = 0;
+    } else {
+      dropdown.classList.add("active");
+      setTimeout(() => {
+        dropdown.style.opacity = 1;
+      }, 10); 
+    }
+  });
+})
 
   
     const refs = {
