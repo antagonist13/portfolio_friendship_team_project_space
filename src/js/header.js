@@ -38,15 +38,15 @@ document.getElementById("profile-link").addEventListener("click", function(event
     }
 
 
-    const dropModal = refs.modal.addEventListener('click', toggleModal);
-    if (dropModal.classList.contains("visually-hidden")) {
-      dropModal.classList.remove("visually-hidden");
-      dropModal.style.opacity = 0;
-    } else {
-      dropModal.classList.add("visually-hidden");
-      setTimeout(() => {
-        dropModal.style.opacity = 1;
-      }, 10); 
-    }
+    // const dropModal = refs.modal.addEventListener('click', toggleModal);
+    // if (dropModal.classList.contains("visually-hidden")) {
+    //   dropModal.classList.remove("visually-hidden");
+    //   dropModal.style.opacity = 0;
+    // } else {
+    //   dropModal.classList.add("visually-hidden");
+    //   setTimeout(() => {
+    //     dropModal.style.opacity = 1;
+    //   }, 10); 
+    // }
 
-  })(); 
+  }) 
