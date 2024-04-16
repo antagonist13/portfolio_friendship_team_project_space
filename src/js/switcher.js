@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 })
 switcher.addEventListener('change', function () {
     if (themeSwitch.checked) {
-        document.body.classList.add('bright-theme');
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[1])
+        document.body.classList.add('bright-theme');
     } else {
-        document.body.classList.remove('bright-theme');
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
+        document.body.classList.remove('bright-theme');
     }
 });
 document.addEventListener('DOMContentLoaded', function (e) {
