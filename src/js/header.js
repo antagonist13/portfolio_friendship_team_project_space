@@ -56,3 +56,4 @@ refs.navItemList.forEach((item) => {
   item.addEventListener('click', modaleClose);
 })
  refs.orderBtn.addEventListener('click', modaleClose)
+
