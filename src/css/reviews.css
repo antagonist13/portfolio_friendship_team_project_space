@@ -77,8 +77,9 @@
 /* the rule style for changing via js */
 
 .disabled_btn {
-  border-color: #3b3b3b;
-  stroke: #3b3b3b;
+  border-color: #3b3b3b !important;
+  stroke: #3b3b3b !important;
+  background-color: transparent !important;
   cursor: auto;
 }
 

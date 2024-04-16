@@ -8,3 +8,4 @@ import './js/covers';
 import './js/work-together';
 import './js/reviews';
 import './js/scroll-top';
+import './js/switcher';
