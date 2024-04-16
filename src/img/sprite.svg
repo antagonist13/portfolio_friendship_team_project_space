@@ -56,13 +56,21 @@
             <path fill="none" 
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
         </symbol>
-        <!-- <symbol id="about-me-icon-arrow-up" viewBox="0 0 32 32">
+        <symbol id="about-me-icon-arrow-up" viewBox="0 0 32 32">
             <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter"
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
         </symbol>
         <symbol id="about-me-icon-arrow-down" viewBox="0 0 32 32">
             <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter"
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
-        </symbol> -->
+        </symbol>
+        <symbol id="about-me-icon-arrow-up-bright" viewBox="0 0 32 32">
+            <path fill="none" stroke="#1c1d20" style="stroke: var(--color1, #1c1d20)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
+        </symbol>
+        <symbol id="about-me-icon-arrow-down-bright" viewBox="0 0 32 32">
+            <path fill="none" stroke="#1c1d20" style="stroke: var(--color1, #1c1d20)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
+        </symbol>
     </defs>
 </svg>

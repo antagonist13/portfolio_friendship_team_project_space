@@ -23,16 +23,32 @@ function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
   const statusBtn = divBtn.dataset.status;
   const downSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-dad45ecc.svg#icon-arrow-up"></use>
+                <use href="./img/sprite.svg#about-me-icon-arrow-down"></use>
               </svg>`;
   const upSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-dad45ecc.svg#icon-arrow-up"></use>
+                <use href="./img/sprite.svg#about-me-icon-arrow-up"></use>
+              </svg>`;
+  
+    const downSvgBright = `<svg width="20" height="20">
+                <use href="./img/sprite.svg#about-me-icon-arrow-down-bright"></use>
+              </svg>`;
+    const upSvgBright = `<svg width="20" height="20">
+                <use href="./img/sprite.svg#about-me-icon-arrow-up-bright"></use>
               </svg>`;
   if (statusBtn === 'open') {
-    divBtn.innerHTML = downSvg;
+    if (divBtn.classList.contains('accordion-btn-svg-bright')) {
+      divBtn.innerHTML = downSvgBright;
+    } else {
+      divBtn.innerHTML = downSvg;
+    }
     divBtn.dataset.status = 'close';
-  } else {
-    divBtn.innerHTML = upSvg;
+  } 
+  if (statusBtn === 'close') {
+    if (divBtn.classList.contains('accordion-btn-svg-bright')) {
+      divBtn.innerHTML = upSvgBright;
+    } else {
+      divBtn.innerHTML = upSvg;
+      }
     divBtn.dataset.status = 'open';
   }
 }
