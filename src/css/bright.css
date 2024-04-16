@@ -132,3 +132,13 @@
 .reviews__descr-bright {
   color: #1c1d20;
 }
+.reviews__arrow-left-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+.reviews__arrow-right-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}

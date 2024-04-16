@@ -33,7 +33,8 @@ const sectionsElements = {
     faqIcons: document.querySelectorAll('.faq-icon'),
     faqListItems: document.querySelectorAll('.faq-list-item'),
     reviews__h2: document.querySelector('.reviews__h2'), 
-    
+    reviews__arrow_left: document.querySelector('.reviews__arrow-left'), 
+    reviews__arrow_right: document.querySelector('.reviews__arrow-right'), 
 }
 document.addEventListener('DOMContentLoaded', function (e) {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -90,7 +91,8 @@ function themeSwitchFoo() {
         sectionsElements.faqIcons.forEach(item => { item.classList.add('faq-icon-bright'); });
         sectionsElements.faqListItems.forEach(item => { item.classList.add('faq-list-item-bright'); });
         sectionsElements.reviews__h2.classList.add('reviews__h2-bright');
-        
+        sectionsElements.reviews__arrow_left.classList.add('reviews__arrow-left-bright');
+        sectionsElements.reviews__arrow_right.classList.add('reviews__arrow-right-bright');
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -124,6 +126,8 @@ function themeSwitchFoo() {
         sectionsElements.faqIcons.forEach(item => { item.classList.remove('faq-icon-bright'); });
         sectionsElements.faqListItems.forEach(item => { item.classList.remove('faq-list-item-bright'); });
         sectionsElements.reviews__h2.classList.remove('reviews__h2-bright');
+        sectionsElements.reviews__arrow_left.classList.remove('reviews__arrow-left-bright');
+        sectionsElements.reviews__arrow_right.classList.remove('reviews__arrow-right-bright');
         
     }
 }
