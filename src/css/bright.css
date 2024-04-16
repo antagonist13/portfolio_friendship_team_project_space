@@ -50,10 +50,19 @@
   color: rgb(237, 59, 68);
 }
 .about-me-ac-trigger-bright {
-  color: rgba(28, 29, 32, 0.4) !important;
+  color: rgba(28, 29, 32, 0.8) !important;
 }
 .accordion-btn-svg-bright {
   stroke: #1c1d20;
   fill: #1c1d20;
   border: 1px solid rgba(28, 29, 32, 0.2);
+}
+.ac-text-bright {
+  color: #1c1d20 !important;
+}
+.ac-bright {
+  border-bottom: 1px solid rgba(28, 29, 32, 0.2) !important;
+}
+.about-me-swiper-slide-bright {
+  background-color: rgba(28, 29, 32, 0.8);
 }

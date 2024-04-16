@@ -16,6 +16,9 @@ const sectionsElements = {
     aboutMeWrapperTextGray: document.querySelector('.about-me-wrapper-text-grey'),
     aboutMeAcTrigger: document.querySelectorAll('.about-me-ac-trigger'),
     accordionBtnSvg: document.querySelectorAll('.accordion-btn-svg'),
+    acText: document.querySelectorAll('.ac-text'),
+    acInfoBlocks: document.querySelectorAll('.about-me-accordion-container .ac'),
+    aboutMeSwiperSlideItems: document.querySelectorAll('.about-me-swiper-slide'),
     
 }
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -39,6 +42,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.aboutMeWrapperTextGray.classList.add('about-me-wrapper-text-grey-bright');
         sectionsElements.aboutMeAcTrigger.forEach(item => { item.classList.add('about-me-ac-trigger-bright'); });
         sectionsElements.accordionBtnSvg.forEach(item => { item.classList.add('accordion-btn-svg-bright'); });
+        sectionsElements.acText.forEach(item => { item.classList.add('ac-text-bright'); });
+        sectionsElements.acInfoBlocks.forEach(item => { item.classList.add('ac-bright'); });
+        sectionsElements.aboutMeSwiperSlideItems.forEach(item => { item.classList.add('about-me-swiper-slide-bright'); });
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -55,6 +61,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.aboutMeWrapperTextGray.classList.remove('about-me-wrapper-text-grey-bright');
         sectionsElements.aboutMeAcTrigger.forEach(item => { item.classList.remove('about-me-ac-trigger-bright'); });
         sectionsElements.accordionBtnSvg.forEach(item => { item.classList.remove('accordion-btn-svg-bright'); });
+        sectionsElements.acText.forEach(item => { item.classList.remove('ac-text-bright'); });
+        sectionsElements.acInfoBlocks.forEach(item => { item.classList.remove('ac-bright'); });
+        sectionsElements.aboutMeSwiperSlideItems.forEach(item => { item.classList.remove('about-me-swiper-slide-bright'); });
     }
 });
 document.addEventListener('DOMContentLoaded', function (e) {
