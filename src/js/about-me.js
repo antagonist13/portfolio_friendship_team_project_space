@@ -23,10 +23,10 @@ function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
   const statusBtn = divBtn.dataset.status;
   const downSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-arrow-down"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#about-me-icon-arrow-down"></use>
               </svg>`;
   const upSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-arrow-up"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#about-me-icon-arrow-up"></use>
               </svg>`;
   if (statusBtn === 'open') {
     divBtn.innerHTML = downSvg;
