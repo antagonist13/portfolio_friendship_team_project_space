@@ -76,6 +76,8 @@ body {
   align-items: center;
   justify-content: center;
   stroke: #fafafa;
+  stroke: var(--color1, #fafafa);
+  stroke-linejoin: miter;
   width: 36px;
   height: 36px;
   border: 1px solid rgba(250, 250, 250, 0.2);
