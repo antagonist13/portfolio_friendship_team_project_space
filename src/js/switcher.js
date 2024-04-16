@@ -11,6 +11,10 @@ const sectionsElements = {
     menuList: document.querySelector('.menu-list'),
     contacts: document.querySelectorAll('.contacts'),
     socialMediaListItems: document.querySelectorAll('.social-media-list-item'),
+    sectionsLinks:document.querySelectorAll('.sections-link'),
+    aboutMeWrapperText: document.querySelector('.about-me-wrapper-text'),
+    aboutMeWrapperTextGray: document.querySelector('.about-me-wrapper-text-grey'),
+    
 }
 document.addEventListener('DOMContentLoaded', function (e) {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -28,6 +32,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.menuList.classList.add('menu-list-bright');
         sectionsElements.contacts.forEach(item => { item.classList.add('contacts-bright'); });
         sectionsElements.socialMediaListItems.forEach(item => { item.classList.add('social-media-list-item-bright'); });
+        sectionsElements.sectionsLinks.forEach(item => { item.classList.add('sections-link-bright'); });
+        sectionsElements.aboutMeWrapperText.classList.add('about-me-wrapper-text-bright');
+        sectionsElements.aboutMeWrapperTextGray.classList.add('about-me-wrapper-text-grey-bright');
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
         document.body.classList.remove('bright-theme');
@@ -38,6 +45,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.menuList.classList.remove('menu-list-bright');
         sectionsElements.contacts.forEach(item => { item.classList.remove('contacts-bright'); });
         sectionsElements.socialMediaListItems.forEach(item => { item.classList.remove('social-media-list-item-bright'); });
+        sectionsElements.sectionsLinks.forEach(item => { item.classList.remove('sections-link-bright'); });
+        sectionsElements.aboutMeWrapperText.classList.remove('about-me-wrapper-text-bright');
+        sectionsElements.aboutMeWrapperTextGray.classList.remove('about-me-wrapper-text-grey-bright');
     }
 });
 document.addEventListener('DOMContentLoaded', function (e) {

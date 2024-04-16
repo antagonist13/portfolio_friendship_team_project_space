@@ -6,16 +6,16 @@
   background: linear-gradient(
     270deg,
     rgb(248, 248, 255) 49.712%,
-    rgb(105, 41, 45) 67.655%,
-    rgb(237, 59, 68) 99.721%
+    rgb(237, 59, 68) 67.655%,
+    rgb(105, 41, 45) 99.721%
   );
 }
 .hero-bright {
   background: linear-gradient(
     270deg,
     rgb(248, 248, 255) 49.712%,
-    rgb(105, 41, 45) 67.655%,
-    rgb(237, 59, 68) 99.721%
+    rgb(237, 59, 68) 67.655%,
+    rgb(105, 41, 45) 99.721%
   );
 }
 .transparent-bright {
@@ -37,4 +37,17 @@
 }
 .social-media-list-item-bright {
   border: 1px solid rgba(28, 29, 32, 0.2);
+}
+.sections-link-bright {
+  color: #1c1d20 !important;
+}
+
+/* ABOUT ME */
+.about-me-wrapper-text-bright {
+  background: rgb(221, 217, 216);
+}
+.about-me-wrapper-text-grey-bright {
+  color: rgb(237, 59, 68);
+}
+.about-me-ac-trigger-bright {
 }
