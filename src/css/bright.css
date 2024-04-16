@@ -121,5 +121,14 @@
 }
 .reviews__item-bright {
   background-color: rgb(221, 217, 216);
-  border: 1px solid rgba(28, 29, 32, 0.2);
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+.reviews__img-bright {
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+.reviews__h3-bright {
+  color: #1c1d20;
+}
+.reviews__descr-bright {
+  color: #1c1d20;
 }
