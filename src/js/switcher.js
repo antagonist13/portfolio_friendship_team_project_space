@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 switcher.addEventListener('change', () => {
     themeSwitchFoo()
     themeSwitchFooAsync()
+    window.location.reload();
 })
 document.addEventListener('DOMContentLoaded', function (e) {
     const theme = localStorage.getItem(STORAGE_KEY_THEME)

@@ -19,21 +19,22 @@ accordionBtns.forEach(btn => {
   btn.addEventListener('click', onAccordionBtn);
 });
 // /portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-arrow-up
+// /portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#icon-arrow-up
 function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
   const statusBtn = divBtn.dataset.status;
   const downSvg = `<svg width="20" height="20">
-                <use href="./img/sprite.svg#about-me-icon-arrow-down"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-down"></use>
               </svg>`;
   const upSvg = `<svg width="20" height="20">
-                <use href="./img/sprite.svg#about-me-icon-arrow-up"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-up"></use>
               </svg>`;
   
     const downSvgBright = `<svg width="20" height="20">
-                <use href="./img/sprite.svg#about-me-icon-arrow-down-bright"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-down-bright"></use>
               </svg>`;
     const upSvgBright = `<svg width="20" height="20">
-                <use href="./img/sprite.svg#about-me-icon-arrow-up-bright"></use>
+                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-up-bright"></use>
               </svg>`;
   if (statusBtn === 'open') {
     if (divBtn.classList.contains('accordion-btn-svg-bright')) {
