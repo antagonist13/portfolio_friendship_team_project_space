@@ -1,9 +1,22 @@
 const scrollTop = document.querySelector('.scroll-top');
 
-window.addEventListener('scroll', function () {
-  if (pageYOffset < 75) {
+function checkScrollPosition() {
+  if (pageYOffset < 75 || window.innerWidth < 768) {
     scrollTop.classList.add('visually-hidden');
-    return;
+  } else {
+    scrollTop.classList.remove('visually-hidden');
   }
-  scrollTop.classList.remove('visually-hidden');
+}
+
+checkScrollPosition();
+
+window.addEventListener('scroll', () => {
+  checkScrollPosition();
 });
+
+window,
+  addEventListener('resize', () => {
+    window.innerWidth < 768
+      ? scrollTop.classList.add('visually-hidden')
+      : scrollTop.classList.remove('visually-hidden');
+  });
