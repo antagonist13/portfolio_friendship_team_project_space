@@ -66,3 +66,15 @@
 .about-me-swiper-slide-bright {
   background-color: rgba(28, 29, 32, 0.8);
 }
+/* BENEFITS */
+.benefits-title-bright {
+  color: rgba(28, 29, 32, 0.8);
+}
+.benefits-item-bright {
+  background-color: rgba(28, 29, 32, 0.8);
+  color: rgb(221, 217, 216);
+}
+.order-link-bright {
+  background-color: rgba(237, 59, 68);
+  color: rgb(221, 217, 216);
+}

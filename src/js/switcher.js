@@ -19,6 +19,9 @@ const sectionsElements = {
     acText: document.querySelectorAll('.ac-text'),
     acInfoBlocks: document.querySelectorAll('.about-me-accordion-container .ac'),
     aboutMeSwiperSlideItems: document.querySelectorAll('.about-me-swiper-slide'),
+    benefitsTitle: document.querySelector('.benefits-title'),
+    benefitsItems: document.querySelectorAll('.benefits-item'),
+    orderLinkBtn: document.querySelector('.order-link'),
     
 }
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -26,7 +29,18 @@ document.addEventListener('DOMContentLoaded', function (e) {
     switcher.checked = true;
 }
 })
-switcher.addEventListener('change', function () {
+switcher.addEventListener('change', themeSwitchFoo);
+document.addEventListener('DOMContentLoaded', function (e) {
+    const theme = localStorage.getItem(STORAGE_KEY_THEME)
+  if (theme === `bright`) {
+      switcher.checked = true;
+      themeSwitchFoo()
+  } else {
+      switcher.checked = false;
+}
+})
+
+function themeSwitchFoo() {
     if (themeSwitch.checked) {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[1])
         document.body.classList.add('bright-theme');
@@ -45,6 +59,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.acText.forEach(item => { item.classList.add('ac-text-bright'); });
         sectionsElements.acInfoBlocks.forEach(item => { item.classList.add('ac-bright'); });
         sectionsElements.aboutMeSwiperSlideItems.forEach(item => { item.classList.add('about-me-swiper-slide-bright'); });
+        sectionsElements.benefitsTitle.classList.add('benefits-title-bright');
+        sectionsElements.benefitsItems.forEach(item => { item.classList.add('benefits-item-bright'); });
+        sectionsElements.orderLinkBtn.classList.add('order-link-bright');
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -64,14 +81,8 @@ switcher.addEventListener('change', function () {
         sectionsElements.acText.forEach(item => { item.classList.remove('ac-text-bright'); });
         sectionsElements.acInfoBlocks.forEach(item => { item.classList.remove('ac-bright'); });
         sectionsElements.aboutMeSwiperSlideItems.forEach(item => { item.classList.remove('about-me-swiper-slide-bright'); });
+        sectionsElements.benefitsTitle.classList.remove('benefits-title-bright');
+        sectionsElements.benefitsItems.forEach(item => { item.classList.remove('benefits-item-bright'); });
+        sectionsElements.orderLinkBtn.classList.remove('order-link-bright');
     }
-});
-document.addEventListener('DOMContentLoaded', function (e) {
-    const theme = localStorage.getItem(STORAGE_KEY_THEME)
-    console.log(theme);
-  if (theme === `bright`) {
-    switcher.checked = true;
-  } else {
-      switcher.checked = false;
 }
-})
