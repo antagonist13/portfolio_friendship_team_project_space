@@ -1,6 +1,4 @@
 .header {
-  /* background-image: url(../img/header/background-image.png); */
-  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
   background: linear-gradient(
@@ -48,6 +46,7 @@
   border-radius: 20px;
   width: 80px;
   height: 80px;
+  border: 1px solid black;
 }
 
 .avatar-name {
