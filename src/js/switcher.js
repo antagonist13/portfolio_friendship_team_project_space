@@ -50,9 +50,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
 }
 })
 switcher.addEventListener('change', () => {
+    const animatedPart = document.querySelector('.switcher-center')
+    animatedPart.classList.remove('switcher-center');
+    window.location.reload()
     themeSwitchFoo()
-    themeSwitchFooAsync()
-    window.location.reload();
+    themeSwitchFooAsync()  
 })
 document.addEventListener('DOMContentLoaded', function (e) {
     const theme = localStorage.getItem(STORAGE_KEY_THEME)
