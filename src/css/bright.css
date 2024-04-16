@@ -1,0 +1,180 @@
+.bright-theme {
+  background-color: rgb(248, 248, 255);
+  color: rgb(28, 29, 32);
+}
+.header-bright {
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 255) 9.712%,
+    rgb(237, 59, 68) 97.655%,
+    rgb(105, 41, 45) 99.721%
+  );
+}
+.hero-bright {
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 255) 9.712%,
+    rgb(237, 59, 68) 97.655%,
+    rgb(105, 41, 45) 99.721%
+  );
+}
+.transparent-bright {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 59, 59, 0),
+    rgba(248, 248, 255, 0.2) 16.667%,
+    rgba(59, 59, 59, 0) 100%
+  );
+}
+.hero-title-bright {
+  color: #1c1d20;
+}
+.menu-list-bright {
+  color: #1c1d20;
+}
+.contacts-bright {
+  color: #1c1d20;
+}
+.social-media-list-item-bright {
+  border: 1px solid rgba(28, 29, 32, 0.2);
+}
+.sections-link-bright {
+  color: #1c1d20 !important;
+}
+
+/* ABOUT ME */
+.about-me-wrapper-text-bright {
+  background: rgb(221, 217, 216);
+}
+.about-me-wrapper-text-grey-bright {
+  color: rgb(237, 59, 68);
+}
+.about-me-ac-trigger-bright {
+  color: rgba(28, 29, 32, 0.8) !important;
+}
+.accordion-btn-svg-bright {
+  stroke: #1c1d20;
+  fill: #1c1d20;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+}
+.ac-text-bright {
+  color: #1c1d20 !important;
+}
+.ac-bright {
+  border-bottom: 1px solid rgba(28, 29, 32, 0.2) !important;
+}
+.about-me-swiper-slide-bright {
+  background-color: rgba(28, 29, 32, 0.8);
+}
+/* BENEFITS */
+.benefits-title-bright {
+  color: rgba(28, 29, 32, 0.8);
+}
+.benefits-item-bright {
+  background-color: rgba(28, 29, 32, 0.8);
+  color: rgb(221, 217, 216);
+}
+.order-link-bright {
+  background-color: rgba(237, 59, 68);
+  color: rgb(221, 217, 216);
+}
+/* PROJECTS */
+.project-head-bright {
+  color: #1c1d20;
+  opacity: 80%;
+}
+.project-div-design-bright {
+  background-color: rgba(221, 217, 216);
+}
+.project-btn-swap-left-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+.project-btn-swap-right-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+/* FAQ */
+.faq-main-title-bright {
+  color: rgba(28, 29, 32, 0.8);
+}
+.fqa-title-bright {
+  color: #1c1d20;
+}
+.fqa-text-bright {
+  color: #1c1d20;
+}
+.faq-btn-bright {
+  border: 1px solid rgba(28, 29, 32, 0.2);
+}
+.faq-icon-bright {
+  stroke: #1c1d20;
+}
+.faq-list-item-bright {
+  border-color: rgba(28, 29, 32, 0.2) !important;
+}
+/* REVIEWS */
+.reviews__h2-bright {
+  color: rgba(28, 29, 32, 0.8);
+}
+.reviews__item-bright {
+  background-color: rgb(221, 217, 216);
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+.reviews__img-bright {
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+.reviews__h3-bright {
+  color: #1c1d20;
+}
+.reviews__descr-bright {
+  color: #1c1d20;
+}
+.reviews__arrow-left-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+.reviews__arrow-right-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+/* WORK TOGETHER */
+.remove-before::before {
+  content: none;
+}
+.footer-header-bright {
+  color: #1c1d20;
+}
+.form-input-bright {
+  color: #1c1d20;
+  border-bottom: 1px solid rgba(28, 29, 32, 0.4);
+}
+.form-input-bright:focus {
+  color: #1c1d20;
+}
+.link-bright {
+  color: #1c1d20;
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+/* MOBILE MODAL */
+.burger-open-icon-bright {
+  stroke: #1c1d20;
+}
+.burger-close-icon-bright {
+  stroke: #1c1d20;
+}
+.burger-nav-link-bright {
+  color: #1c1d20;
+}
+.navigation-background-bright {
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 255) 29.712%,
+    rgb(237, 59, 68) 67.655%,
+    rgb(105, 41, 45) 99.721%
+  );
+}
