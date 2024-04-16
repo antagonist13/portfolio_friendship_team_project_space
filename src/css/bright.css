@@ -78,3 +78,20 @@
   background-color: rgba(237, 59, 68);
   color: rgb(221, 217, 216);
 }
+.project-head-bright {
+  color: #1c1d20;
+  opacity: 80%;
+}
+.project-div-design-bright {
+  background-color: rgba(221, 217, 216);
+}
+.project-btn-swap-left-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}
+.project-btn-swap-right-bright {
+  border: 1px solid #3b3b3b;
+  stroke: rgba(248, 248, 255);
+  background-color: rgb(237, 59, 68);
+}

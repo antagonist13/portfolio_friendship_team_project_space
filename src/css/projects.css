@@ -115,9 +115,10 @@
 }
 
 .project-btn-swap-disable {
-  border-color: #3b3b3b;
-  stroke: #3b3b3b;
+  border: 1px solid #3b3b3b !important;
+  stroke: #3b3b3b !important;
   cursor: auto;
+  background-color: transparent !important;
 }
 
 /* =======================tablet======================= */

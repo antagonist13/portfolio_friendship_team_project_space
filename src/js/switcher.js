@@ -22,8 +22,12 @@ const sectionsElements = {
     benefitsTitle: document.querySelector('.benefits-title'),
     benefitsItems: document.querySelectorAll('.benefits-item'),
     orderLinkBtn: document.querySelector('.order-link'),
-    
+    projectHead: document.querySelector('.project-head'),
+    projectDivDesign: document.querySelectorAll('.project-div-design'),
+    projectBtnSwapLeft: document.querySelector('.project-btn-swap-left'),
+    projectBtnSwapRight: document.querySelector('.project-btn-swap-right'),
 }
+console.log(sectionsElements.projectBtnSwapDisable);
 document.addEventListener('DOMContentLoaded', function (e) {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
     switcher.checked = true;
@@ -62,6 +66,10 @@ function themeSwitchFoo() {
         sectionsElements.benefitsTitle.classList.add('benefits-title-bright');
         sectionsElements.benefitsItems.forEach(item => { item.classList.add('benefits-item-bright'); });
         sectionsElements.orderLinkBtn.classList.add('order-link-bright');
+        sectionsElements.projectHead.classList.add('project-head-bright');
+        sectionsElements.projectDivDesign.forEach(item => { item.classList.add('project-div-design-bright'); });
+        sectionsElements.projectBtnSwapLeft.classList.add('project-btn-swap-left-bright');
+        sectionsElements.projectBtnSwapRight.classList.add('project-btn-swap-right-bright');
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -84,5 +92,9 @@ function themeSwitchFoo() {
         sectionsElements.benefitsTitle.classList.remove('benefits-title-bright');
         sectionsElements.benefitsItems.forEach(item => { item.classList.remove('benefits-item-bright'); });
         sectionsElements.orderLinkBtn.classList.remove('order-link-bright');
+        sectionsElements.projectHead.classList.remove('project-head-bright');
+        sectionsElements.projectDivDesign.forEach(item => { item.classList.remove('project-div-design-bright'); });
+        sectionsElements.projectBtnSwapLeft.classList.remove('project-btn-swap-left-bright');
+        sectionsElements.projectBtnSwapRight.classList.remove('project-btn-swap-right-bright');
     }
 }
