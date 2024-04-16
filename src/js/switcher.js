@@ -26,6 +26,12 @@ const sectionsElements = {
     projectDivDesign: document.querySelectorAll('.project-div-design'),
     projectBtnSwapLeft: document.querySelector('.project-btn-swap-left'),
     projectBtnSwapRight: document.querySelector('.project-btn-swap-right'),
+    faqMainTitle: document.querySelector('.faq-main-title'),
+    fqaTitles: document.querySelectorAll('.fqa-title'),
+    fqaText: document.querySelectorAll('.fqa-text'),
+    faqBtns: document.querySelectorAll('.faq-btn'),
+    faqIcons: document.querySelectorAll('.faq-icon'),
+    faqListItems: document.querySelectorAll('.faq-list-item'),
 }
 console.log(sectionsElements.projectBtnSwapDisable);
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -70,6 +76,12 @@ function themeSwitchFoo() {
         sectionsElements.projectDivDesign.forEach(item => { item.classList.add('project-div-design-bright'); });
         sectionsElements.projectBtnSwapLeft.classList.add('project-btn-swap-left-bright');
         sectionsElements.projectBtnSwapRight.classList.add('project-btn-swap-right-bright');
+        sectionsElements.faqMainTitle.classList.add('faq-main-title-bright');
+        sectionsElements.fqaTitles.forEach(item => { item.classList.add('fqa-title-bright'); });
+        sectionsElements.fqaText.forEach(item => { item.classList.add('fqa-text-bright'); });
+        sectionsElements.faqBtns.forEach(item => { item.classList.add('faq-btn-bright'); });
+        sectionsElements.faqIcons.forEach(item => { item.classList.add('faq-icon-bright'); });
+        sectionsElements.faqListItems.forEach(item => { item.classList.add('faq-list-item-bright'); });
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -96,5 +108,11 @@ function themeSwitchFoo() {
         sectionsElements.projectDivDesign.forEach(item => { item.classList.remove('project-div-design-bright'); });
         sectionsElements.projectBtnSwapLeft.classList.remove('project-btn-swap-left-bright');
         sectionsElements.projectBtnSwapRight.classList.remove('project-btn-swap-right-bright');
+        sectionsElements.faqMainTitle.classList.remove('faq-main-title-bright');
+        sectionsElements.fqaTitles.forEach(item => { item.classList.remove('fqa-title-bright'); });
+        sectionsElements.fqaText.forEach(item => { item.classList.remove('fqa-text-bright'); });
+        sectionsElements.faqBtns.forEach(item => { item.classList.remove('faq-btn-bright'); });
+        sectionsElements.faqIcons.forEach(item => { item.classList.remove('faq-icon-bright'); });
+        sectionsElements.faqListItems.forEach(item => { item.classList.remove('faq-list-item-bright'); });
     }
 }
