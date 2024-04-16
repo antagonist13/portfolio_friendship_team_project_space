@@ -14,9 +14,8 @@ window.addEventListener('scroll', () => {
   checkScrollPosition();
 });
 
-window,
-  addEventListener('resize', () => {
-    window.innerWidth < 768
-      ? scrollTop.classList.add('visually-hidden')
-      : scrollTop.classList.remove('visually-hidden');
-  });
+window.addEventListener('resize', () => {
+  window.innerWidth < 768
+    ? scrollTop.classList.add('visually-hidden')
+    : scrollTop.classList.remove('visually-hidden');
+});
