@@ -14,6 +14,8 @@ const sectionsElements = {
     sectionsLinks:document.querySelectorAll('.sections-link'),
     aboutMeWrapperText: document.querySelector('.about-me-wrapper-text'),
     aboutMeWrapperTextGray: document.querySelector('.about-me-wrapper-text-grey'),
+    aboutMeAcTrigger: document.querySelectorAll('.about-me-ac-trigger'),
+    accordionBtnSvg: document.querySelectorAll('.accordion-btn-svg'),
     
 }
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -35,6 +37,9 @@ switcher.addEventListener('change', function () {
         sectionsElements.sectionsLinks.forEach(item => { item.classList.add('sections-link-bright'); });
         sectionsElements.aboutMeWrapperText.classList.add('about-me-wrapper-text-bright');
         sectionsElements.aboutMeWrapperTextGray.classList.add('about-me-wrapper-text-grey-bright');
+        sectionsElements.aboutMeAcTrigger.forEach(item => { item.classList.add('about-me-ac-trigger-bright'); });
+        sectionsElements.accordionBtnSvg.forEach(item => { item.classList.add('accordion-btn-svg-bright'); });
+        
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
         document.body.classList.remove('bright-theme');
@@ -48,6 +53,8 @@ switcher.addEventListener('change', function () {
         sectionsElements.sectionsLinks.forEach(item => { item.classList.remove('sections-link-bright'); });
         sectionsElements.aboutMeWrapperText.classList.remove('about-me-wrapper-text-bright');
         sectionsElements.aboutMeWrapperTextGray.classList.remove('about-me-wrapper-text-grey-bright');
+        sectionsElements.aboutMeAcTrigger.forEach(item => { item.classList.remove('about-me-ac-trigger-bright'); });
+        sectionsElements.accordionBtnSvg.forEach(item => { item.classList.remove('accordion-btn-svg-bright'); });
     }
 });
 document.addEventListener('DOMContentLoaded', function (e) {
