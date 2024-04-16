@@ -5,16 +5,16 @@
 .header-bright {
   background: linear-gradient(
     270deg,
-    rgb(248, 248, 255) 49.712%,
-    rgb(237, 59, 68) 67.655%,
+    rgb(248, 248, 255) 9.712%,
+    rgb(237, 59, 68) 97.655%,
     rgb(105, 41, 45) 99.721%
   );
 }
 .hero-bright {
   background: linear-gradient(
     270deg,
-    rgb(248, 248, 255) 49.712%,
-    rgb(237, 59, 68) 67.655%,
+    rgb(248, 248, 255) 9.712%,
+    rgb(237, 59, 68) 97.655%,
     rgb(105, 41, 45) 99.721%
   );
 }
@@ -141,4 +141,40 @@
   border: 1px solid #3b3b3b;
   stroke: rgba(248, 248, 255);
   background-color: rgb(237, 59, 68);
+}
+/* WORK TOGETHER */
+.remove-before::before {
+  content: none;
+}
+.footer-header-bright {
+  color: #1c1d20;
+}
+.form-input-bright {
+  color: #1c1d20;
+  border-bottom: 1px solid rgba(28, 29, 32, 0.4);
+}
+.form-input-bright:focus {
+  color: #1c1d20;
+}
+.link-bright {
+  color: #1c1d20;
+  border: 1px solid rgba(28, 29, 32, 0.4);
+}
+/* MOBILE MODAL */
+.burger-open-icon-bright {
+  stroke: #1c1d20;
+}
+.burger-close-icon-bright {
+  stroke: #1c1d20;
+}
+.burger-nav-link-bright {
+  color: #1c1d20;
+}
+.navigation-background-bright {
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 255) 29.712%,
+    rgb(237, 59, 68) 67.655%,
+    rgb(105, 41, 45) 99.721%
+  );
 }

@@ -34,7 +34,15 @@ const sectionsElements = {
     faqListItems: document.querySelectorAll('.faq-list-item'),
     reviews__h2: document.querySelector('.reviews__h2'), 
     reviews__arrow_left: document.querySelector('.reviews__arrow-left'), 
-    reviews__arrow_right: document.querySelector('.reviews__arrow-right'), 
+    reviews__arrow_right: document.querySelector('.reviews__arrow-right'),
+    footer: document.querySelector('.footer'),
+    footerHeader: document.querySelector('.footer-header'),
+    formInput: document.querySelectorAll('.form-input'),
+    link: document.querySelectorAll('.link'),
+    burgerOpenIcon: document.querySelector('.burger-open-icon'),
+    burgerCloseIcon: document.querySelector('.burger-close-icon'),
+    burgerNavLink: document.querySelectorAll('.burger-nav-link'),
+    navBg: document.querySelector('.navigation-background'),
 }
 document.addEventListener('DOMContentLoaded', function (e) {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -93,6 +101,14 @@ function themeSwitchFoo() {
         sectionsElements.reviews__h2.classList.add('reviews__h2-bright');
         sectionsElements.reviews__arrow_left.classList.add('reviews__arrow-left-bright');
         sectionsElements.reviews__arrow_right.classList.add('reviews__arrow-right-bright');
+        sectionsElements.footer.classList.add('remove-before');
+        sectionsElements.footerHeader.classList.add('footer-header-bright');
+        sectionsElements.formInput.forEach(item => { item.classList.add('form-input-bright'); });
+        sectionsElements.link.forEach(item => { item.classList.add('link-bright'); });
+        sectionsElements.burgerOpenIcon.classList.add('burger-open-icon-bright');
+        sectionsElements.burgerCloseIcon.classList.add('burger-close-icon-bright');
+        sectionsElements.burgerNavLink.forEach(item => { item.classList.add('burger-nav-link-bright'); });
+        sectionsElements.navBg.classList.add('navigation-background-bright');
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -128,7 +144,14 @@ function themeSwitchFoo() {
         sectionsElements.reviews__h2.classList.remove('reviews__h2-bright');
         sectionsElements.reviews__arrow_left.classList.remove('reviews__arrow-left-bright');
         sectionsElements.reviews__arrow_right.classList.remove('reviews__arrow-right-bright');
-        
+        sectionsElements.footer.classList.remove('remove-before');
+        sectionsElements.footerHeader.classList.remove('footer-header-bright');
+        sectionsElements.formInput.forEach(item => { item.classList.remove('form-input-bright'); });
+        sectionsElements.link.forEach(item => { item.classList.remove('link-bright'); });
+        sectionsElements.burgerOpenIcon.classList.remove('burger-open-icon-bright');
+        sectionsElements.burgerCloseIcon.classList.remove('burger-close-icon-bright');
+        sectionsElements.burgerNavLink.forEach(item => { item.classList.remove('burger-nav-link-bright'); });
+        sectionsElements.navBg.classList.remove('navigation-background-bright');
     }
 }
 async function themeSwitchFooAsync() {

@@ -5,7 +5,7 @@ body {
 }
 
 .about-me {
-  padding-top: 32px;
+  padding-top: 64px;
   padding-bottom: 32px;
   position: relative;
 }
@@ -202,7 +202,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .about-me {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 82px;
   }
 
