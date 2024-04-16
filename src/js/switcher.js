@@ -32,19 +32,25 @@ const sectionsElements = {
     faqBtns: document.querySelectorAll('.faq-btn'),
     faqIcons: document.querySelectorAll('.faq-icon'),
     faqListItems: document.querySelectorAll('.faq-list-item'),
+    reviews__h2: document.querySelector('.reviews__h2'), 
+    
 }
-console.log(sectionsElements.projectBtnSwapDisable);
+console.log(sectionsElements.reviews__items);
 document.addEventListener('DOMContentLoaded', function (e) {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
     switcher.checked = true;
 }
 })
-switcher.addEventListener('change', themeSwitchFoo);
+switcher.addEventListener('change', () => {
+    themeSwitchFoo()
+    themeSwitchFooAsync()
+})
 document.addEventListener('DOMContentLoaded', function (e) {
     const theme = localStorage.getItem(STORAGE_KEY_THEME)
   if (theme === `bright`) {
       switcher.checked = true;
       themeSwitchFoo()
+      themeSwitchFooAsync()
   } else {
       switcher.checked = false;
 }
@@ -82,6 +88,8 @@ function themeSwitchFoo() {
         sectionsElements.faqBtns.forEach(item => { item.classList.add('faq-btn-bright'); });
         sectionsElements.faqIcons.forEach(item => { item.classList.add('faq-icon-bright'); });
         sectionsElements.faqListItems.forEach(item => { item.classList.add('faq-list-item-bright'); });
+        sectionsElements.reviews__h2.classList.add('reviews__h2-bright');
+        
         
     } else {
         localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[0])
@@ -114,5 +122,15 @@ function themeSwitchFoo() {
         sectionsElements.faqBtns.forEach(item => { item.classList.remove('faq-btn-bright'); });
         sectionsElements.faqIcons.forEach(item => { item.classList.remove('faq-icon-bright'); });
         sectionsElements.faqListItems.forEach(item => { item.classList.remove('faq-list-item-bright'); });
+        sectionsElements.reviews__h2.classList.remove('reviews__h2-bright');
+        
     }
+}
+async function themeSwitchFooAsync() {
+     const reviews__items = document.querySelectorAll('.reviews__item')
+     if (themeSwitch.checked) { 
+         reviews__items.forEach(item => { item.classList.add('reviews__item-bright'); });
+     } else {
+         reviews__items.forEach(item => { item.classList.remove('reviews__item-bright'); }); 
+     }
 }

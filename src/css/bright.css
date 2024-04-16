@@ -115,3 +115,11 @@
 .faq-list-item-bright {
   border-color: rgba(28, 29, 32, 0.2) !important;
 }
+/* REVIEWS */
+.reviews__h2-bright {
+  color: rgba(28, 29, 32, 0.8);
+}
+.reviews__item-bright {
+  background-color: rgb(221, 217, 216);
+  border: 1px solid rgba(28, 29, 32, 0.2);
+}
