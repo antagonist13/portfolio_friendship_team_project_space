@@ -24,17 +24,17 @@ function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
   const statusBtn = divBtn.dataset.status;
   const downSvg = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2" />
+  <path d="M15 7.5L10 12.5L5 7.5" stroke-width="2" />
 </svg>`;
   const upSvg = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />
+  <path d="M15 12.5L10 7.5L5 12.5" stroke-width="2" />
 </svg>`;
 
-  const downSvgBright = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15 7.5L10 12.5L5 7.5" stroke="#1c1d20" stroke-width="2" />
+  const downSvgBright = `<svg width="20" height="20"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 7.5L10 12.5L5 7.5" stroke-width="2" />
 </svg>`;
   const upSvgBright = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15 12.5L10 7.5L5 12.5" stroke="#1c1d20" stroke-width="2" />
+  <path d="M15 12.5L10 7.5L5 12.5" stroke-width="2" />
 </svg>`;
   if (statusBtn === 'open') {
     if (divBtn.classList.contains('accordion-btn-svg-bright')) {

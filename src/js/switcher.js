@@ -10,6 +10,50 @@ const switchThemeMobileBtnCercle = document.querySelector(
 const mobileMoonSvg = document.querySelector('.mobile-moon-svg');
 const mobileSunSvg = document.querySelector('.mobile-sun-svg');
 
+const STORAGE_KEY_THEME = `websiteTheme`;
+const STORAGE_ITEMS_THEME = [`dark`, `bright`];
+const sectionsElements = {
+  header: document.querySelector('.header'),
+  hero: document.querySelector('.hero'),
+  backgroundItems: document.querySelectorAll('.transparent'),
+  heroTitle: document.querySelector('.hero-title'),
+  menuList: document.querySelector('.menu-list'),
+  contacts: document.querySelectorAll('.contacts'),
+  socialMediaListItems: document.querySelectorAll('.social-media-list-item'),
+  sectionsLinks: document.querySelectorAll('.sections-link'),
+  aboutMeWrapperText: document.querySelector('.about-me-wrapper-text'),
+  aboutMeWrapperTextGray: document.querySelector('.about-me-wrapper-text-grey'),
+  aboutMeAcTrigger: document.querySelectorAll('.about-me-ac-trigger'),
+  accordionBtnSvg: document.querySelectorAll('.accordion-btn-svg'),
+  acText: document.querySelectorAll('.ac-text'),
+  acInfoBlocks: document.querySelectorAll('.about-me-accordion-container .ac'),
+  aboutMeSwiperSlideItems: document.querySelectorAll('.about-me-swiper-slide'),
+  benefitsTitle: document.querySelector('.benefits-title'),
+  benefitsItems: document.querySelectorAll('.benefits-item'),
+  orderLinkBtn: document.querySelector('.order-link'),
+  projectHead: document.querySelector('.project-head'),
+  projectDivDesign: document.querySelectorAll('.project-div-design'),
+  projectBtnSwapLeft: document.querySelector('.project-btn-swap-left'),
+  projectBtnSwapRight: document.querySelector('.project-btn-swap-right'),
+  faqMainTitle: document.querySelector('.faq-main-title'),
+  fqaTitles: document.querySelectorAll('.fqa-title'),
+  fqaText: document.querySelectorAll('.fqa-text'),
+  faqBtns: document.querySelectorAll('.faq-btn'),
+  faqIcons: document.querySelectorAll('.faq-icon'),
+  faqListItems: document.querySelectorAll('.faq-list-item'),
+  reviews__h2: document.querySelector('.reviews__h2'),
+  reviews__arrow_left: document.querySelector('.reviews__arrow-left'),
+  reviews__arrow_right: document.querySelector('.reviews__arrow-right'),
+  footer: document.querySelector('.footer'),
+  footerHeader: document.querySelector('.footer-header'),
+  formInput: document.querySelectorAll('.form-input'),
+  link: document.querySelectorAll('.link'),
+  burgerOpenIcon: document.querySelector('.burger-open-icon'),
+  burgerCloseIcon: document.querySelector('.burger-close-icon'),
+  burgerNavLink: document.querySelectorAll('.burger-nav-link'),
+  navBg: document.querySelector('.navigation-background'),
+};
+
 let themeColor = 'black';
 
 document.addEventListener('DOMContentLoaded', function (e) {
@@ -84,53 +128,9 @@ switchThemeMobileBtn.addEventListener('click', () => {
     themeSwitchFooAsync();
   }
 });
-const STORAGE_KEY_THEME = `websiteTheme`;
-const STORAGE_ITEMS_THEME = [`dark`, `bright`];
-const sectionsElements = {
-  header: document.querySelector('.header'),
-  hero: document.querySelector('.hero'),
-  backgroundItems: document.querySelectorAll('.transparent'),
-  heroTitle: document.querySelector('.hero-title'),
-  menuList: document.querySelector('.menu-list'),
-  contacts: document.querySelectorAll('.contacts'),
-  socialMediaListItems: document.querySelectorAll('.social-media-list-item'),
-  sectionsLinks: document.querySelectorAll('.sections-link'),
-  aboutMeWrapperText: document.querySelector('.about-me-wrapper-text'),
-  aboutMeWrapperTextGray: document.querySelector('.about-me-wrapper-text-grey'),
-  aboutMeAcTrigger: document.querySelectorAll('.about-me-ac-trigger'),
-  accordionBtnSvg: document.querySelectorAll('.accordion-btn-svg'),
-  acText: document.querySelectorAll('.ac-text'),
-  acInfoBlocks: document.querySelectorAll('.about-me-accordion-container .ac'),
-  aboutMeSwiperSlideItems: document.querySelectorAll('.about-me-swiper-slide'),
-  benefitsTitle: document.querySelector('.benefits-title'),
-  benefitsItems: document.querySelectorAll('.benefits-item'),
-  orderLinkBtn: document.querySelector('.order-link'),
-  projectHead: document.querySelector('.project-head'),
-  projectDivDesign: document.querySelectorAll('.project-div-design'),
-  projectBtnSwapLeft: document.querySelector('.project-btn-swap-left'),
-  projectBtnSwapRight: document.querySelector('.project-btn-swap-right'),
-  faqMainTitle: document.querySelector('.faq-main-title'),
-  fqaTitles: document.querySelectorAll('.fqa-title'),
-  fqaText: document.querySelectorAll('.fqa-text'),
-  faqBtns: document.querySelectorAll('.faq-btn'),
-  faqIcons: document.querySelectorAll('.faq-icon'),
-  faqListItems: document.querySelectorAll('.faq-list-item'),
-  reviews__h2: document.querySelector('.reviews__h2'),
-  reviews__arrow_left: document.querySelector('.reviews__arrow-left'),
-  reviews__arrow_right: document.querySelector('.reviews__arrow-right'),
-  footer: document.querySelector('.footer'),
-  footerHeader: document.querySelector('.footer-header'),
-  formInput: document.querySelectorAll('.form-input'),
-  link: document.querySelectorAll('.link'),
-  burgerOpenIcon: document.querySelector('.burger-open-icon'),
-  burgerCloseIcon: document.querySelector('.burger-close-icon'),
-  burgerNavLink: document.querySelectorAll('.burger-nav-link'),
-  navBg: document.querySelector('.navigation-background'),
-};
 
 function themeSwitchFoo() {
   if (themeColor === 'white') {
-    console.log(111);
     localStorage.setItem(STORAGE_KEY_THEME, STORAGE_ITEMS_THEME[1]);
     document.body.classList.add('bright-theme');
     sectionsElements.header.classList.add('header-bright');
@@ -159,6 +159,7 @@ function themeSwitchFoo() {
       item.classList.add('about-me-ac-trigger-bright');
     });
     sectionsElements.accordionBtnSvg.forEach(item => {
+      item.firstElementChild.style.stroke = '#1c1d20';
       item.classList.add('accordion-btn-svg-bright');
     });
     sectionsElements.acText.forEach(item => {
@@ -251,6 +252,7 @@ function themeSwitchFoo() {
       item.classList.remove('about-me-ac-trigger-bright');
     });
     sectionsElements.accordionBtnSvg.forEach(item => {
+      item.firstElementChild.style.stroke = 'white';
       item.classList.remove('accordion-btn-svg-bright');
     });
     sectionsElements.acText.forEach(item => {
