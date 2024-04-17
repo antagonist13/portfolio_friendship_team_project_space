@@ -49,12 +49,10 @@
                 d="M8 8l16 16"></path>
         </symbol>
         <symbol id="icon-arrow-up" viewBox="0 0 32 32">
-            <path fill="none"
-                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
+            <path fill="none" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 20l-8-8-8 8"></path>
         </symbol>
         <symbol id="icon-arrow-down" viewBox="0 0 32 32">
-            <path fill="none" 
-                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
+            <path fill="none" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
         </symbol>
         <symbol id="about-me-icon-arrow-up" viewBox="0 0 32 32">
             <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter"
@@ -71,6 +69,19 @@
         <symbol id="about-me-icon-arrow-down-bright" viewBox="0 0 32 32">
             <path fill="none" stroke="#1c1d20" style="stroke: var(--color1, #1c1d20)" stroke-linejoin="miter"
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M24 12l-8 8-8-8"></path>
+        </symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24">
+            <path
+                d="M9 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93q-1.594 0-3-0.422 3.094-0.938 5.039-3.586t1.945-5.977-1.945-5.977-5.039-3.586q1.406-0.422 3-0.422z">
+            </path>
+        </symbol>
+        <symbol id="icon-sun" viewBox="0 0 32 32">
+            <path
+                d="M16 26c1.105 0 2 0.895 2 2v2c0 1.105-0.895 2-2 2s-2-0.895-2-2v-2c0-1.105 0.895-2 2-2zM16 6c-1.105 0-2-0.895-2-2v-2c0-1.105 0.895-2 2-2s2 0.895 2 2v2c0 1.105-0.895 2-2 2zM30 14c1.105 0 2 0.895 2 2s-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2zM6 16c0 1.105-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2c1.105 0 2 0.895 2 2zM25.899 23.071l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0zM6.101 8.929l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0zM25.899 8.929c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414zM6.101 23.071c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414z">
+            </path>
+            <path
+                d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.418 0 8-3.582 8-8s-3.582-8-8-8zM16 21c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5z">
+            </path>
         </symbol>
     </defs>
 </svg>

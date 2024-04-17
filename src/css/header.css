@@ -245,117 +245,47 @@
 }
 /* ==================== MODAL ended ===================== */
 /* SWITCHER */
-.theme-switcher {
-  position: absolute;
-  top: 0;
-  right: 190px;
-  box-sizing: border-box;
+.moon-svg,
+.mobile-moon-svg {
+  fill: lightgray;
 }
-.theme-switch__label {
-  background: var(--bg, white);
-  color: var(--text, black);
+
+.sun-svg,
+.mobile-sun-svg {
+  fill: transparent;
 }
-.theme-switch__input:checked ~ label {
-  --text: black;
+
+.button-box,
+.mobile-button-box {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-/*  Toggle switch */
-.theme-switch__input,
-.theme-switch__label {
+
+.button-theme,
+.mobile-button-theme {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
   cursor: pointer;
+  margin-top: 4px;
+}
+
+.button-theme-cercle,
+.mobile-button-theme-cercle {
   position: absolute;
-  z-index: 1;
-}
-.theme-switch__input {
-  opacity: 0;
-  &:hover,
-  &:focus {
-    + .theme-switch__label {
-      background-color: lightSlateGray;
-    }
-
-    + .theme-switch__label span::after {
-      background-color: lighten(lightBlue, 10%);
-    }
-  }
-}
-
-.theme-switch__label {
-  padding: 15px;
-  margin: 32px;
-  transition: background-color 200ms ease-in-out;
-  width: 60px;
-  height: 30px;
-  border-radius: 50px;
-  text-align: center;
-  background-color: slateGray;
-  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
-
-  &::before,
-  &::after {
-    font-size: 2rem;
-    position: absolute;
-    transform: translate3d(0, -50%, 0);
-    top: 50%;
-  }
-
-  &::before {
-    content: '\263E';
-    right: 100%;
-    margin-right: 10px;
-
-    color: turquoise;
-  }
-
-  &::after {
-    content: '\263C';
-    left: 100%;
-    margin-left: 10px;
-    color: lightSlateGray;
-  }
-
-  .switcher-center {
-    position: absolute;
-    bottom: calc(100% + 10px);
-    left: 0;
-    width: 100%;
-  }
-
-  .switcher-center::after {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0px;
-    width: 30px;
-    height: 30px;
-    content: '';
-    border-radius: 50%;
-    background-color: lightBlue;
-    transition: transform 200ms, background-color 200ms;
-    box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
-  }
-}
-
-/*  Checked label styles */
-.theme-switch__input:checked ~ .theme-switch__label {
-  background-color: lightSlateGray;
-
-  &::before {
-    color: lightSlateGray;
-  }
-
-  &::after {
-    color: orange;
-  }
-
-  .switcher-center::after {
-    transform: translate3d(30px, 0, 0);
-  }
-}
-@media screen and (max-width: 374px) {
-  .theme-switcher {
-    top: 30px;
-    right: 150px;
-    box-sizing: border-box;
-  }
+  left: -1px;
+  top: -1px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /* SWITCHER END*/
 /* ============================================== */

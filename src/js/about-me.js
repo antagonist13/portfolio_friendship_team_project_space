@@ -23,19 +23,19 @@ accordionBtns.forEach(btn => {
 function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
   const statusBtn = divBtn.dataset.status;
-  const downSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-down"></use>
-              </svg>`;
-  const upSvg = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-up"></use>
-              </svg>`;
-  
-    const downSvgBright = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-down-bright"></use>
-              </svg>`;
-    const upSvgBright = `<svg width="20" height="20">
-                <use href="/portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#about-me-icon-arrow-up-bright"></use>
-              </svg>`;
+  const downSvg = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2" />
+</svg>`;
+  const upSvg = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />
+</svg>`;
+
+  const downSvgBright = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 7.5L10 12.5L5 7.5" stroke="#1c1d20" stroke-width="2" />
+</svg>`;
+  const upSvgBright = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 12.5L10 7.5L5 12.5" stroke="#1c1d20" stroke-width="2" />
+</svg>`;
   if (statusBtn === 'open') {
     if (divBtn.classList.contains('accordion-btn-svg-bright')) {
       divBtn.innerHTML = downSvgBright;
@@ -43,13 +43,13 @@ function onAccordionBtn(event) {
       divBtn.innerHTML = downSvg;
     }
     divBtn.dataset.status = 'close';
-  } 
+  }
   if (statusBtn === 'close') {
     if (divBtn.classList.contains('accordion-btn-svg-bright')) {
       divBtn.innerHTML = upSvgBright;
     } else {
       divBtn.innerHTML = upSvg;
-      }
+    }
     divBtn.dataset.status = 'open';
   }
 }
