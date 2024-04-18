@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
 })
 switcher.addEventListener('change', () => {
     const animatedPart = document.querySelector('.switcher-center')
-    animatedPart.classList.remove('switcher-center');
-    window.location.reload()
+    // animatedPart.classList.remove('switcher-center');
+    // window.location.reload()
     themeSwitchFoo()
     themeSwitchFooAsync()  
 })
