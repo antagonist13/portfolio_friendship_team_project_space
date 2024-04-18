@@ -38,7 +38,9 @@ body {
 .about-me-wrapper-foto {
   border-radius: 24px;
 }
-
+.rotate {
+  transform: rotate(180deg);
+}
 /*----------------- ACCARDION STYLES ---------------*/
 
 .about-me-accordion-container {

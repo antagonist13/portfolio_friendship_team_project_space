@@ -18,23 +18,16 @@ const accordionBtns = document.querySelectorAll('.about-me-ac-trigger');
 accordionBtns.forEach(btn => {
   btn.addEventListener('click', onAccordionBtn);
 });
-// /portfolio_friendship_team_project_space/assets/sprite-5311fca3.svg#icon-arrow-up
-// /portfolio_friendship_team_project_space/assets/sprite-9821808f.svg#icon-arrow-up
+// /portfolio_friendship_team_project_space/assets/sprite-4758f5c0.svg#icon-arrow-up
 function onAccordionBtn(event) {
   const divBtn = event.currentTarget.firstElementChild;
+  const divBtnSvg = divBtn.firstElementChild
   const statusBtn = divBtn.dataset.status;
-  const downSvg = `<svg width="20" height="20">
-                <use href="/img/sprite.svg#icon-arrow-down"></use>
-              </svg>`;
-  const upSvg = `<svg width="20" height="20">
-                <use href="/img/sprite.svg#icon-arrow-up"></use>
-              </svg>`;
+    divBtnSvg.classList.toggle('rotate');
   if (statusBtn === 'open') {
-    divBtn.innerHTML = downSvg;
     divBtn.dataset.status = 'close';
   } 
   if (statusBtn === 'close') {
-    divBtn.innerHTML = upSvg;
     divBtn.dataset.status = 'open';
   }
 }
